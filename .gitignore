@@ -11,19 +11,19 @@
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Compiled Dynamic libraries, disabled to avoid blacklisting Plugins' Binary
+# *.so
+# *.dylib
+# *.dll
 
 # Fortran module files
 *.mod
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# Compiled Static libraries, disabled to avoid blacklisting Plugins' Binary
+# *.lai
+# *.la
+# *.a
+# *.lib
 
 # Executables
 *.exe
