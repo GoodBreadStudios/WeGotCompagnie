@@ -8,7 +8,8 @@ APlayerCharacter::APlayerCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	MyComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MyComponent"));
+	MyComponent->SetupAttachment(Super::GetRootComponent());
 }
 
 // Called when the game starts or when spawned
@@ -29,5 +30,6 @@ void APlayerCharacter::Tick(float DeltaTime)
 void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	uint32 somval = 10;
 }
 
