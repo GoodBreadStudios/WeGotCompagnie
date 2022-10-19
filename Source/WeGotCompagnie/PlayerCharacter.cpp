@@ -2,6 +2,7 @@
 
 
 #include "PlayerCharacter.h"
+#include "HelperMacros.h"
 
 // Sets default values
 APlayerCharacter::APlayerCharacter()
@@ -16,7 +17,6 @@ APlayerCharacter::APlayerCharacter()
 void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
@@ -30,6 +30,5 @@ void APlayerCharacter::Tick(float DeltaTime)
 void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	uint32 somval = 10;
 }
 
