@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "HelperMacros.h"
 #include "PlayerCharacter.generated.h"
 
 UCLASS()
@@ -14,6 +15,9 @@ class WEGOTCOMPAGNIE_API APlayerCharacter : public ACharacter
 public:
 	// Sets default values for this character's properties
 	APlayerCharacter();
+
+	UPROPERTY(EditAnywhere)
+	UStaticMeshComponent* MyComponent;
 
 protected:
 	// Called when the game starts or when spawned
