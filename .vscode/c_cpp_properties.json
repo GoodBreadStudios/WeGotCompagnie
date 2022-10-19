@@ -2,25 +2,24 @@
     "configurations": [
         {
             "name": "WeGotCompagnieEditor Editor Mac Development (WeGotCompagnie)",
-            "intelliSenseMode": "clang-x64",
+            "intelliSenseMode": "macos-clang-arm64",
             "macFrameworkPath": [
                 "/System/Library/Frameworks",
                 "/Library/Frameworks"
             ],
             "compileCommands": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_WeGotCompagnie.json",
             "cStandard": "c17",
-            "cppStandard": "c++17"
-        },
-        {
-            "name": "Mac",
-            "intelliSenseMode": "clang-x64",
-            "macFrameworkPath": [
-                "/System/Library/Frameworks",
-                "/Library/Frameworks"
+            "cppStandard": "c++17",
+            "includePath": [
+                "${workspaceFolder}/Content/*",
+                "${workspaceFolder}/Intermediate/*",
+                "${workspaceFolder}/Plugins/*",
+                "${workspaceFolder}/Source/*",
+                "/Users/Shared/Epic Games/UE_5.0/Engine/Source/**",
+                "/Users/Shared/Epic Games/UE_5.0/Engine/Source/Runtime/Core/Public",
+                "/Users/Shared/Epic Games/UE_5.0/Engine/Source/Runtime/Engine/Classes"
             ],
-            "compileCommands": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default.json",
-            "cStandard": "c17",
-            "cppStandard": "c++17"
+            "compilerPath": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/c_cpp_properties.json"
         }
     ],
     "version": 4
