@@ -13,7 +13,7 @@
             "includePath": [
                 "${workspaceFolder}/Content/*",
                 "${workspaceFolder}/Intermediate/*",
-                "${workspaceFolder}/Plugins/*",
+                "${workspaceFolder}/Plugins/**",
                 "${workspaceFolder}/Source/*",
                 "/Users/Shared/Epic Games/UE_5.0/Engine/Source/**",
                 "/Users/Shared/Epic Games/UE_5.0/Engine/Source/Runtime/Core/Public",
