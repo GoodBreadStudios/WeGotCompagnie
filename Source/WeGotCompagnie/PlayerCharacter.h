@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "HelperMacros.h"
+#include "Components/StaticMeshComponent.h"
 #include "PlayerCharacter.generated.h"
 
 UCLASS()
