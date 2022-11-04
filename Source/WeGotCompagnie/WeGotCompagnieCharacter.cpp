@@ -6,6 +6,7 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
+#include "HelperMacros.h"
 #include "GameFramework/SpringArmComponent.h"
 
 //////////////////////////////////////////////////////////////////////////
@@ -49,6 +50,10 @@ AWeGotCompagnieCharacter::AWeGotCompagnieCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
+
+	// Init
+	CurrentState = EPlayerState::Idle;
+	PlayerComboTree = TUniquePtr<ComboTree>{new ComboTree{}};
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -58,8 +63,8 @@ void AWeGotCompagnieCharacter::SetupPlayerInputComponent(class UInputComponent* 
 {
 	// Set up gameplay key bindings
 	check(PlayerInputComponent);
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AWeGotCompagnieCharacter::Jump);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AWeGotCompagnieCharacter::StopJumping);
 
 	PlayerInputComponent->BindAxis("Move Forward / Backward", this, &AWeGotCompagnieCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("Move Right / Left", this, &AWeGotCompagnieCharacter::MoveRight);
@@ -72,19 +77,39 @@ void AWeGotCompagnieCharacter::SetupPlayerInputComponent(class UInputComponent* 
 	PlayerInputComponent->BindAxis("Look Up / Down Mouse", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("Look Up / Down Gamepad", this, &AWeGotCompagnieCharacter::LookUpAtRate);
 
-	// handle touch devices
-	PlayerInputComponent->BindTouch(IE_Pressed, this, &AWeGotCompagnieCharacter::TouchStarted);
-	PlayerInputComponent->BindTouch(IE_Released, this, &AWeGotCompagnieCharacter::TouchStopped);
+	// Combo buttons, these will be processed on the combo tree
+	//PlayerInputComponent->BindKey(EKeys::Gamepad_FaceButton_Top, IE_Pressed, this, &AWeGotCompagnieCharacter::KeyPressed);
+	//PlayerInputComponent->BindKey(EKeys::Gamepad_FaceButton_Left, IE_Pressed, this, &AWeGotCompagnieCharacter::KeyPressed);
+	//PlayerInputComponent->BindKey(EKeys::Gamepad_RightShoulder, IE_Pressed, this, &AWeGotCompagnieCharacter::KeyPressed);
+	//PlayerInputComponent->BindKey(EKeys::Gamepad_RightTrigger, IE_Pressed, this, &AWeGotCompagnieCharacter::KeyPressed);
+	//PlayerInputComponent->BindKey(EKeys::Gamepad_LeftShoulder, IE_Pressed, this, &AWeGotCompagnieCharacter::KeyPressed);
+	//PlayerInputComponent->BindKey(EKeys::Gamepad_LeftTrigger, IE_Pressed, this, &AWeGotCompagnieCharacter::KeyPressed);
+
+	//using Node = ComboTree::ComboSubTree;
+	//using Childs = TArray<Node>;
+	//using Callback = FComboEventCallbacks;
+
+	//PlayerComboTree->AddComboSubTree(
+	//	Node{ EKeys::Gamepad_LeftShoulder, Callback{}, Childs {
+	//		Node { EKeys::Gamepad_RightShoulder, ComboTree::CreateCallbacks(this, TArray{&AWeGotCompagnieCharacter::CustomFunc}), Childs{}}
+	//	}}
+	//);
 }
 
-void AWeGotCompagnieCharacter::TouchStarted(ETouchIndex::Type FingerIndex, FVector Location)
+void AWeGotCompagnieCharacter::StopJumping()
 {
-	Jump();
+	ACharacter::StopJumping();
+
+	// Update the player state
+	UpdateState();
 }
 
-void AWeGotCompagnieCharacter::TouchStopped(ETouchIndex::Type FingerIndex, FVector Location)
+void AWeGotCompagnieCharacter::Jump()
 {
-	StopJumping();
+	ACharacter::Jump();
+
+	// Update the player state
+	UpdateState();
 }
 
 void AWeGotCompagnieCharacter::TurnAtRate(float Rate)
@@ -111,6 +136,9 @@ void AWeGotCompagnieCharacter::MoveForward(float Value)
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 		AddMovementInput(Direction, Value);
 	}
+
+	// Update the player state
+	UpdateState();
 }
 
 void AWeGotCompagnieCharacter::MoveRight(float Value)
@@ -126,4 +154,50 @@ void AWeGotCompagnieCharacter::MoveRight(float Value)
 		// add movement in that direction
 		AddMovementInput(Direction, Value);
 	}
+
+	// Update the player state
+	UpdateState();
+}
+
+void AWeGotCompagnieCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+}
+
+void AWeGotCompagnieCharacter::Tick(float DeltaSecond)
+{
+	Super::Tick(DeltaSecond);
+
+	// Debug
+	//DrawDebugDirectionalArrow(GetWorld(), GetActorLocation(), GetActorLocation() + GetMovementComponent()->Velocity, 10.0f, FColor::Red, false, -1.0f, (uint8)0U, 3.0f);
+	//DrawDebugCoordinateSystem(GetWorld(), GetActorLocation(), GetActorRotation(), 20.0f, false, -1.0f, (uint8)1U, 5.0f);
+}
+
+// Put this function at the bottom of all of the key-delegated movement function
+void AWeGotCompagnieCharacter::UpdateState()
+{
+	if (GetMovementComponent()->Velocity.Dot(GetActorUpVector()) == 0.0f)
+	{
+		if (GetMovementComponent()->Velocity.Length() == 0.0f)
+		{
+			CurrentState = EPlayerState::Idle;
+		}
+		else if (GetMovementComponent()->Velocity.Length() <= 300.0f)
+		{
+			CurrentState = EPlayerState::Walk;
+		}
+		else
+		{
+			CurrentState = EPlayerState::Run;
+		}
+	}
+	else
+	{
+		CurrentState = EPlayerState::Jump;
+	}
+}
+
+void AWeGotCompagnieCharacter::KeyPressed(FKey Key)
+{
+	PlayerComboTree->KeyPressed(Key, GetWorld()->TimeSeconds);
 }
