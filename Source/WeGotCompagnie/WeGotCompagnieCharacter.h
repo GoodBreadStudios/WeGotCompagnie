@@ -4,7 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "HelperMacros.h"
+#include "ComboTree.h"
 #include "WeGotCompagnieCharacter.generated.h"
+
+// https://forums.unrealengine.com/t/creating-enums-in-c/465555
+UENUM(BlueprintType)
+enum class EPlayerState : uint8 { Idle, Walk, Run, Jump, Fall, Damaged, Melee, Flurry, Beam };
 
 UCLASS(config=Game)
 class AWeGotCompagnieCharacter : public ACharacter
@@ -18,14 +24,29 @@ class AWeGotCompagnieCharacter : public ACharacter
 	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
+
 public:
 	AWeGotCompagnieCharacter();
+
+	// Blueprint can only override if BeginPlay is public
+	virtual void BeginPlay() override;
+
+	virtual void Tick(float DeltaSecond) override;
 
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Input)
 	float TurnRateGamepad;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	EPlayerState CurrentState;
+
 protected:
+
+	/** Override to change the current state */
+	virtual void StopJumping() override;
+
+	/** Override to change the current state */
+	virtual void Jump() override;
 
 	/** Called for forwards/backward input */
 	void MoveForward(float Value);
@@ -45,11 +66,16 @@ protected:
 	 */
 	void LookUpAtRate(float Rate);
 
-	/** Handler for when a touch input begins. */
-	void TouchStarted(ETouchIndex::Type FingerIndex, FVector Location);
+	// Player State
+	UFUNCTION(BlueprintCallable)
+	void UpdateState();
 
-	/** Handler for when a touch input stops. */
-	void TouchStopped(ETouchIndex::Type FingerIndex, FVector Location);
+	void KeyPressed(FKey Key);
+
+	// Combo and bind funtions
+	TUniquePtr<ComboTree> PlayerComboTree;
+	//UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
+	//void CustomFunc();
 
 protected:
 	// APawn interface
