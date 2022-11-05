@@ -10,7 +10,7 @@
 
 // https://forums.unrealengine.com/t/creating-enums-in-c/465555
 UENUM(BlueprintType)
-enum class EPlayerState : uint8 { Idle, Walk, Run, Jump, Fall, Damaged, Melee, Flurry, Beam };
+enum class EPlayerState : uint8 { Idle, Dodge, Damaged, Melee, Flurry, Beam };
 
 UCLASS(config=Game)
 class AWeGotCompagnieCharacter : public ACharacter
@@ -67,8 +67,8 @@ protected:
 	void LookUpAtRate(float Rate);
 
 	// Player State
-	UFUNCTION(BlueprintCallable)
-	void UpdateState();
+	// UFUNCTION(BlueprintCallable)
+	// void UpdateState();
 
 	void KeyPressed(FKey Key);
 

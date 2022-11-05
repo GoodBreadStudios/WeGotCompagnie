@@ -101,7 +101,7 @@ void AWeGotCompagnieCharacter::StopJumping()
 	ACharacter::StopJumping();
 
 	// Update the player state
-	UpdateState();
+	// UpdateState();
 }
 
 void AWeGotCompagnieCharacter::Jump()
@@ -109,7 +109,7 @@ void AWeGotCompagnieCharacter::Jump()
 	ACharacter::Jump();
 
 	// Update the player state
-	UpdateState();
+	// UpdateState();
 }
 
 void AWeGotCompagnieCharacter::TurnAtRate(float Rate)
@@ -138,7 +138,7 @@ void AWeGotCompagnieCharacter::MoveForward(float Value)
 	}
 
 	// Update the player state
-	UpdateState();
+	// UpdateState();
 }
 
 void AWeGotCompagnieCharacter::MoveRight(float Value)
@@ -156,7 +156,7 @@ void AWeGotCompagnieCharacter::MoveRight(float Value)
 	}
 
 	// Update the player state
-	UpdateState();
+	// UpdateState();
 }
 
 void AWeGotCompagnieCharacter::BeginPlay()
@@ -174,28 +174,28 @@ void AWeGotCompagnieCharacter::Tick(float DeltaSecond)
 }
 
 // Put this function at the bottom of all of the key-delegated movement function
-void AWeGotCompagnieCharacter::UpdateState()
-{
-	if (GetMovementComponent()->Velocity.Dot(GetActorUpVector()) == 0.0f)
-	{
-		if (GetMovementComponent()->Velocity.Length() == 0.0f)
-		{
-			CurrentState = EPlayerState::Idle;
-		}
-		else if (GetMovementComponent()->Velocity.Length() <= 300.0f)
-		{
-			CurrentState = EPlayerState::Walk;
-		}
-		else
-		{
-			CurrentState = EPlayerState::Run;
-		}
-	}
-	else
-	{
-		CurrentState = EPlayerState::Jump;
-	}
-}
+// void AWeGotCompagnieCharacter::UpdateState()
+// {
+// 	if (GetMovementComponent()->Velocity.Dot(GetActorUpVector()) == 0.0f)
+// 	{
+// 		if (GetMovementComponent()->Velocity.Length() == 0.0f)
+// 		{
+// 			CurrentState = EPlayerState::Idle;
+// 		}
+// 		else if (GetMovementComponent()->Velocity.Length() <= 300.0f)
+// 		{
+// 			CurrentState = EPlayerState::Walk;
+// 		}
+// 		else
+// 		{
+// 			CurrentState = EPlayerState::Run;
+// 		}
+// 	}
+// 	else
+// 	{
+// 		CurrentState = EPlayerState::Jump;
+// 	}
+// }
 
 void AWeGotCompagnieCharacter::KeyPressed(FKey Key)
 {
