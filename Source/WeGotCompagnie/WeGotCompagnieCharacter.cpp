@@ -6,6 +6,7 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
+#include "Kismet\GameplayStatics.h"
 #include "HelperMacros.h"
 #include "GameFramework/SpringArmComponent.h"
 
@@ -31,7 +32,8 @@ AWeGotCompagnieCharacter::AWeGotCompagnieCharacter()
 
 	// Note: For faster iteration times these variables, and many more, can be tweaked in the Character Blueprint
 	// instead of recompiling to adjust them
-	GetCharacterMovement()->JumpZVelocity = 700.f;
+	GetCharacterMovement()->JumpZVelocity = 800.f;
+	GetCharacterMovement()->GravityScale = .5f;
 	GetCharacterMovement()->AirControl = 0.35f;
 	GetCharacterMovement()->MaxWalkSpeed = 500.f;
 	GetCharacterMovement()->MinAnalogWalkSpeed = 20.f;
@@ -52,7 +54,10 @@ AWeGotCompagnieCharacter::AWeGotCompagnieCharacter()
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 
 	// Init
-	CurrentState = EPlayerState::Idle;
+	CurrentLocomotionState = EPlayerState::Idle;
+	CurrentActionState = EPlayerActionState::None;
+	bLockOn = false;
+	BossMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("BossMesh"));
 	PlayerComboTree = TUniquePtr<ComboTree>{new ComboTree{}};
 }
 
@@ -65,6 +70,7 @@ void AWeGotCompagnieCharacter::SetupPlayerInputComponent(class UInputComponent* 
 	check(PlayerInputComponent);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AWeGotCompagnieCharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AWeGotCompagnieCharacter::StopJumping);
+	PlayerInputComponent->BindAction("LockOn", IE_Pressed, this, &AWeGotCompagnieCharacter::ToggleLockOn);
 
 	PlayerInputComponent->BindAxis("Move Forward / Backward", this, &AWeGotCompagnieCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("Move Right / Left", this, &AWeGotCompagnieCharacter::MoveRight);
@@ -73,8 +79,8 @@ void AWeGotCompagnieCharacter::SetupPlayerInputComponent(class UInputComponent* 
 	// "turn" handles devices that provide an absolute delta, such as a mouse.
 	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
 	PlayerInputComponent->BindAxis("Turn Right / Left Mouse", this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("Turn Right / Left Gamepad", this, &AWeGotCompagnieCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("Look Up / Down Mouse", this, &APawn::AddControllerPitchInput);
+	PlayerInputComponent->BindAxis("Turn Right / Left Gamepad", this, &AWeGotCompagnieCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("Look Up / Down Gamepad", this, &AWeGotCompagnieCharacter::LookUpAtRate);
 
 	// Combo buttons, these will be processed on the combo tree
@@ -101,7 +107,7 @@ void AWeGotCompagnieCharacter::StopJumping()
 	ACharacter::StopJumping();
 
 	// Update the player state
-	// UpdateState();
+	UpdateLocomotionState();
 }
 
 void AWeGotCompagnieCharacter::Jump()
@@ -109,19 +115,56 @@ void AWeGotCompagnieCharacter::Jump()
 	ACharacter::Jump();
 
 	// Update the player state
-	// UpdateState();
+	UpdateLocomotionState();
+}
+
+void AWeGotCompagnieCharacter::ToggleLockOn()
+{
+	if (!bLockOn && IsValid(BossMesh))
+	{
+		bLockOn = true;
+		ShowLockOnWidget(true);
+	}
+	else
+	{
+		bLockOn = false;
+		ShowLockOnWidget(false);
+	}
 }
 
 void AWeGotCompagnieCharacter::TurnAtRate(float Rate)
 {
-	// calculate delta for this frame from the rate information
-	AddControllerYawInput(Rate * TurnRateGamepad * GetWorld()->GetDeltaSeconds());
+	if (Rate != 0.0f)
+	{
+		// calculate delta for this frame from the rate information
+		AddControllerYawInput(Rate * TurnRateGamepad * GetWorld()->GetDeltaSeconds());
+		if (bLockOn)
+		{
+			bLockOn = false; // disengage lockon on camera turned
+			ShowLockOnWidget(false);
+		}
+	}
+	else if (bLockOn)
+	{
+		FVector LockOnLocation{ BossMesh->GetSocketLocation(TEXT("Neck_LowSocket")) };
+		FVector LookAt{ LockOnLocation - GetActorLocation() };
+		GetController()->SetControlRotation(FMath::RInterpTo(GetController()->GetControlRotation(), LookAt.Rotation(), 0.5f, 0.5f));
+	}
 }
 
 void AWeGotCompagnieCharacter::LookUpAtRate(float Rate)
 {
-	// calculate delta for this frame from the rate information
-	AddControllerPitchInput(Rate * TurnRateGamepad * GetWorld()->GetDeltaSeconds());
+	if (Rate != 0.0f)
+	{
+		// calculate delta for this frame from the rate information
+		AddControllerPitchInput(Rate * TurnRateGamepad * GetWorld()->GetDeltaSeconds());
+		if (bLockOn)
+		{
+			bLockOn = false; // disengage lockon on camera turned
+			ShowLockOnWidget(false);
+		}
+	}
+	 // See TurnAtRate for lockon implementation
 }
 
 void AWeGotCompagnieCharacter::MoveForward(float Value)
@@ -138,7 +181,7 @@ void AWeGotCompagnieCharacter::MoveForward(float Value)
 	}
 
 	// Update the player state
-	// UpdateState();
+	UpdateLocomotionState();
 }
 
 void AWeGotCompagnieCharacter::MoveRight(float Value)
@@ -156,7 +199,7 @@ void AWeGotCompagnieCharacter::MoveRight(float Value)
 	}
 
 	// Update the player state
-	// UpdateState();
+	UpdateLocomotionState();
 }
 
 void AWeGotCompagnieCharacter::BeginPlay()
@@ -174,30 +217,27 @@ void AWeGotCompagnieCharacter::Tick(float DeltaSecond)
 }
 
 // Put this function at the bottom of all of the key-delegated movement function
-// void AWeGotCompagnieCharacter::UpdateState()
-// {
-// 	if (GetMovementComponent()->Velocity.Dot(GetActorUpVector()) == 0.0f)
-// 	{
-// 		if (GetMovementComponent()->Velocity.Length() == 0.0f)
-// 		{
-// 			CurrentState = EPlayerState::Idle;
-// 		}
-// 		else if (GetMovementComponent()->Velocity.Length() <= 300.0f)
-// 		{
-// 			CurrentState = EPlayerState::Walk;
-// 		}
-// 		else
-// 		{
-// 			CurrentState = EPlayerState::Run;
-// 		}
-// 	}
-// 	else
-// 	{
-// 		CurrentState = EPlayerState::Jump;
-// 	}
-// }
+ void AWeGotCompagnieCharacter::UpdateLocomotionState()
+ {
+ 	if (GetMovementComponent()->Velocity.Dot(GetActorUpVector()) == 0.0f)
+ 	{
+ 		if (GetMovementComponent()->Velocity.Length() == 0.0f)
+ 		{
+			CurrentLocomotionState = EPlayerState::Idle;
+ 		}
+		else
+		{
+			CurrentLocomotionState = EPlayerState::Moving;
+		}
+ 	}
+ 	else
+ 	{
+ 		CurrentLocomotionState = EPlayerState::Jump;
+ 	}
+ }
 
 void AWeGotCompagnieCharacter::KeyPressed(FKey Key)
 {
 	PlayerComboTree->KeyPressed(Key, GetWorld()->TimeSeconds);
 }
+
