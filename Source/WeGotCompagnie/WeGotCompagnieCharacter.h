@@ -6,11 +6,16 @@
 #include "GameFramework/Character.h"
 #include "HelperMacros.h"
 #include "ComboTree.h"
+#include "Components/BillboardComponent.h"
+#include "Components/WidgetComponent.h"
 #include "WeGotCompagnieCharacter.generated.h"
 
 // https://forums.unrealengine.com/t/creating-enums-in-c/465555
-UENUM(BlueprintType)
-enum class EPlayerState : uint8 { Idle, Dodge, Damaged, Melee, Flurry, Beam };
+// Use the enum in BP, only use this when the design is finalized.
+UENUM(BlueprintType) // Locomotion state (default is Idle)
+enum class EPlayerState : uint8 { Idle, Moving, Dodge, Jump, UseCurrent };
+UENUM(BlueprintType) // Default is None, is used to either blend (ranged) or overwrite (melee) the current locomotion state
+enum class EPlayerActionState : uint8 { None, Damaged, Dead, KnockedDown, Melee, Flurry, Beam, UseCurrent };
 
 UCLASS(config=Game)
 class AWeGotCompagnieCharacter : public ACharacter
@@ -37,9 +42,6 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Input)
 	float TurnRateGamepad;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-	EPlayerState CurrentState;
-
 protected:
 
 	/** Override to change the current state */
@@ -47,6 +49,8 @@ protected:
 
 	/** Override to change the current state */
 	virtual void Jump() override;
+
+	virtual void ToggleLockOn();
 
 	/** Called for forwards/backward input */
 	void MoveForward(float Value);
@@ -66,9 +70,19 @@ protected:
 	 */
 	void LookUpAtRate(float Rate);
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	bool bLockOn;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	USkeletalMeshComponent* BossMesh;  // used to extract the boss' socket location for lock-on
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
+	void ShowLockOnWidget(bool ShouldShow);
+
 	// Player State
-	// UFUNCTION(BlueprintCallable)
-	// void UpdateState();
+	void  UpdateLocomotionState();
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	EPlayerState CurrentLocomotionState;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	EPlayerActionState CurrentActionState;
 
 	void KeyPressed(FKey Key);
 
