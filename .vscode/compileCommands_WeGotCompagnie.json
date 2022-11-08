@@ -533,5 +533,15 @@
         "file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/Sequencer/FMODParameterSection.h",
         "command": "\"/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++\" @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_WeGotCompagnie/WeGotCompagnie.204.rsp'",
         "directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+    },
+    {
+        "file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/ComboTree.cpp",
+        "command": "\"/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++\" @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_WeGotCompagnie/WeGotCompagnie.204.rsp'",
+        "directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+    },
+    {
+        "file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/ComboTree.h",
+        "command": "\"/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++\" @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_WeGotCompagnie/WeGotCompagnie.204.rsp'",
+        "directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
     }
 ]
