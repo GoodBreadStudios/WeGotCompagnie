@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{90227837-d679-45c0-b9fd-90410211ce0c}">
+		<property name="name">
+			<value>NotPlayingViolin</value>
+		</property>
+		<relationship name="folder">
+			<destination>{51ac40d5-1552-453d-a8ef-56e474037612}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{bec98854-de12-4768-8846-5673f7c5d917}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{bec98854-de12-4768-8846-5673f7c5d917}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>5</value>
+		</property>
+	</object>
+</objects>

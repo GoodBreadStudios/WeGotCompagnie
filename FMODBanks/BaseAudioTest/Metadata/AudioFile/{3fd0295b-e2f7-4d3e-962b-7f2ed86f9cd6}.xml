@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{3fd0295b-e2f7-4d3e-962b-7f2ed86f9cd6}">
+		<property name="assetPath">
+			<value>Effects/Multiple notes with tremolo.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>40.193741496598641</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e3050202-dd72-4684-bc65-b288d694f54a}</destination>
+		</relationship>
+	</object>
+</objects>

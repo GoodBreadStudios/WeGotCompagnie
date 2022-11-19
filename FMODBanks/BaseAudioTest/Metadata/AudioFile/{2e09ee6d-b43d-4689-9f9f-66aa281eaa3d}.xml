@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{2e09ee6d-b43d-4689-9f9f-66aa281eaa3d}">
+		<property name="assetPath">
+			<value>Effects/Prototype_2_scale_tremolo.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>17.902585034013605</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e3050202-dd72-4684-bc65-b288d694f54a}</destination>
+		</relationship>
+	</object>
+</objects>
