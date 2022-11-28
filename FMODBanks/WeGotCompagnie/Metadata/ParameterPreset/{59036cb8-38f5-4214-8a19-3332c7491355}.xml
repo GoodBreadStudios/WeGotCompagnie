@@ -15,6 +15,12 @@
 		<property name="initialValue">
 			<value>1</value>
 		</property>
+		<property name="seekSpeed">
+			<value>1.1000000238418579</value>
+		</property>
+		<property name="seekSpeedAsymmetric">
+			<value>true</value>
+		</property>
 		<property name="isExposedRecursively">
 			<value>false</value>
 		</property>

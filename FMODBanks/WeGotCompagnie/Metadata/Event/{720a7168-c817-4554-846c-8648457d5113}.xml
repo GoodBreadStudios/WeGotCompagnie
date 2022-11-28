@@ -240,6 +240,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{d661ea44-f651-4ba4-b371-c060e8e0a1f8}">
+		<property name="volume">
+			<value>-4</value>
+		</property>
 		<property name="name">
 			<value>tuba</value>
 		</property>
