@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{2acb68d7-1020-4777-823c-d8e2b4323e44}">
 		<property name="assetPath">
-			<value>loud tuba main loop.wav</value>
+			<value>tuba/loud tuba main loop.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

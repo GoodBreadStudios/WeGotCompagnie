@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{59036cb8-38f5-4214-8a19-3332c7491355}">
+		<property name="name">
+			<value>NotPlayingViolin</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5aeb06c1-a23e-4509-8f36-b61a3b9e2bd4}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{2a029f36-fe93-483d-8cba-216d870f0709}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{2a029f36-fe93-483d-8cba-216d870f0709}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
