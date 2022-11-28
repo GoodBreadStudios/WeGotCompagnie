@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="ParameterPreset" id="{125b1324-5aa3-4c2d-bfe0-0aa6caaae54e}">
+	<object class="ParameterPreset" id="{705936ac-db4b-457d-9910-abb7c7033684}">
 		<property name="name">
-			<value>SwitchStyle</value>
+			<value>BossPlaying</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5aeb06c1-a23e-4509-8f36-b61a3b9e2bd4}</destination>
 		</relationship>
 		<relationship name="parameter">
-			<destination>{c62094c9-29da-4e12-aa14-30048778f9fb}</destination>
+			<destination>{4de5f045-29af-480e-9058-57f6cab32483}</destination>
 		</relationship>
 	</object>
-	<object class="GameParameter" id="{c62094c9-29da-4e12-aa14-30048778f9fb}">
+	<object class="GameParameter" id="{4de5f045-29af-480e-9058-57f6cab32483}">
 		<property name="initialValue">
 			<value>0</value>
 		</property>
 		<property name="seekSpeed">
-			<value>10</value>
+			<value>5</value>
 		</property>
 		<property name="seekSpeedDescending">
-			<value>0.52999997138977051</value>
+			<value>1.6000000238418579</value>
+		</property>
+		<property name="seekSpeedAsymmetric">
+			<value>true</value>
 		</property>
 		<property name="isExposedRecursively">
 			<value>false</value>
