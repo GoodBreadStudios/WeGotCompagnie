@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{6d2a5785-fb75-4f13-989e-e374a70becf5}">
+		<property name="assetPath">
+			<value>Orchestra/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9cc28386-acee-4077-b039-ef67372fede0}</destination>
+		</relationship>
+	</object>
+</objects>
