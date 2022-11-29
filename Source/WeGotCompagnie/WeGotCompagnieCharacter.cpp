@@ -56,7 +56,9 @@ AWeGotCompagnieCharacter::AWeGotCompagnieCharacter()
 	CurrentLocomotionState = EPlayerState::Idle;
 	CurrentActionState = EPlayerActionState::None;
 	bLockOn = false;
+	bForceNoLockOn = false;
 	BossMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("BossMesh"));
+	BossMesh->SetupAttachment(RootComponent); // setup attachment to avoid compilation error? maybe not needed if we just restart UE and the problem will go away?
 	PlayerComboTree = TUniquePtr<ComboTree>{new ComboTree{}};
 }
 
@@ -119,6 +121,11 @@ void AWeGotCompagnieCharacter::Jump()
 
 void AWeGotCompagnieCharacter::ToggleLockOn()
 {
+	if (bForceNoLockOn)
+	{
+		bLockOn = false;
+		return;
+	}
 	if (!bLockOn && IsValid(BossMesh))
 	{
 		bLockOn = true;
@@ -145,6 +152,11 @@ void AWeGotCompagnieCharacter::TurnAtRate(float Rate)
 	}
 	else if (bLockOn)
 	{
+		if (bForceNoLockOn)
+		{
+			bLockOn = false;
+			ShowLockOnWidget(false);
+		}
 		FVector LockOnLocation{ BossMesh->GetSocketLocation(TEXT("Neck_LowSocket")) };
 		FVector LookAt{ LockOnLocation - GetActorLocation() };
 		GetController()->SetControlRotation(FMath::RInterpTo(GetController()->GetControlRotation(), LookAt.Rotation(), 0.5f, 0.5f));

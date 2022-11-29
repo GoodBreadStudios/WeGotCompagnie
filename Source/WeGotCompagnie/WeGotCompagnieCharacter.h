@@ -73,6 +73,8 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	bool bLockOn;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	bool bForceNoLockOn; // this is used to override bLockOn = true if the boss jumped
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	USkeletalMeshComponent* BossMesh;  // used to extract the boss' socket location for lock-on
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
 	void ShowLockOnWidget(bool ShouldShow);

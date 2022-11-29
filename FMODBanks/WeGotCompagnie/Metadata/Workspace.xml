@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="Workspace" id="{3b2e2a12-55b7-428d-81d1-1e0faa44e2c7}">
+		<property name="builtBanksOutputDirectory">
+			<value>../../../../SuperPongProto/WeGotCompagnie/Content/FMOD</value>
+		</property>
+		<relationship name="masterEventFolder">
+			<destination>{2fea947e-9968-44aa-b190-f8fc8231b3a2}</destination>
+		</relationship>
+		<relationship name="masterTagFolder">
+			<destination>{0521dee7-3cb3-47e8-86ff-9bf2fe0c26f5}</destination>
+		</relationship>
+		<relationship name="masterEffectPresetFolder">
+			<destination>{f065595d-984c-4553-9205-a4200417fc92}</destination>
+		</relationship>
+		<relationship name="masterParameterPresetFolder">
+			<destination>{5aeb06c1-a23e-4509-8f36-b61a3b9e2bd4}</destination>
+		</relationship>
+		<relationship name="masterBankFolder">
+			<destination>{52a0a346-93f8-4ed2-99d3-8f33d7d98a9a}</destination>
+		</relationship>
+		<relationship name="masterSandboxFolder">
+			<destination>{8a7fba09-8cef-42bb-92dc-555bb7e6e3d7}</destination>
+		</relationship>
+		<relationship name="masterAssetFolder">
+			<destination>{9cc28386-acee-4077-b039-ef67372fede0}</destination>
+		</relationship>
+		<relationship name="mixer">
+			<destination>{d19a5221-bb17-4f14-b9d8-a2694f7edc06}</destination>
+		</relationship>
+		<relationship name="profilerSessionFolder">
+			<destination>{f66330b8-b44b-4825-97d3-701fd7da7b61}</destination>
+		</relationship>
+		<relationship name="platforms">
+			<destination>{ec6105cd-03b1-4da5-a1d3-2919565b09f8}</destination>
+		</relationship>
+	</object>
+</objects>
