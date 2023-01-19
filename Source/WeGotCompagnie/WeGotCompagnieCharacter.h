@@ -13,9 +13,9 @@
 // https://forums.unrealengine.com/t/creating-enums-in-c/465555
 // Use the enum in BP, only use this when the design is finalized.
 UENUM(BlueprintType) // Locomotion state (default is Idle)
-enum class EPlayerState : uint8 { Idle, Moving, Dodge, Jump, UseCurrent };
+enum class EPlayerState : uint8 { Idle, Moving, Jump, UseCurrent };
 UENUM(BlueprintType) // Default is None, is used to either blend (ranged) or overwrite (melee) the current locomotion state
-enum class EPlayerActionState : uint8 { None, Damaged, Dead, KnockedDown, Melee, Flurry, Beam, UseCurrent };
+enum class EPlayerActionState : uint8 { None, Damaged, Dead, KnockedDown, Melee, Flurry, Beam, Dodge, UseCurrent };
 
 UCLASS(config=Game)
 class AWeGotCompagnieCharacter : public ACharacter
