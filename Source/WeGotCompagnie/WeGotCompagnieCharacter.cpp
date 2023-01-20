@@ -48,18 +48,6 @@ AWeGotCompagnieCharacter::AWeGotCompagnieCharacter()
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
-
-	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
-	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
-
-	// Init
-	CurrentLocomotionState = EPlayerState::Idle;
-	CurrentActionState = EPlayerActionState::None;
-	bLockOn = false;
-	bForceNoLockOn = false;
-	BossMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("BossMesh"));
-	BossMesh->SetupAttachment(RootComponent); // setup attachment to avoid compilation error? maybe not needed if we just restart UE and the problem will go away?
-	PlayerComboTree = TUniquePtr<ComboTree>{new ComboTree{}};
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -69,9 +57,8 @@ void AWeGotCompagnieCharacter::SetupPlayerInputComponent(class UInputComponent* 
 {
 	// Set up gameplay key bindings
 	check(PlayerInputComponent);
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AWeGotCompagnieCharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AWeGotCompagnieCharacter::StopJumping);
-	PlayerInputComponent->BindAction("LockOn", IE_Pressed, this, &AWeGotCompagnieCharacter::ToggleLockOn);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AWeGotCompagnieCharacter::JumpUp);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AWeGotCompagnieCharacter::StopJumpUp);
 
 	PlayerInputComponent->BindAxis("Move Forward / Backward", this, &AWeGotCompagnieCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("Move Right / Left", this, &AWeGotCompagnieCharacter::MoveRight);
@@ -103,116 +90,6 @@ void AWeGotCompagnieCharacter::SetupPlayerInputComponent(class UInputComponent* 
 	//);
 }
 
-void AWeGotCompagnieCharacter::StopJumping()
-{
-	ACharacter::StopJumping();
-
-	// Update the player state
-	UpdateLocomotionState();
-}
-
-void AWeGotCompagnieCharacter::Jump()
-{
-	ACharacter::Jump();
-
-	// Update the player state
-	UpdateLocomotionState();
-}
-
-void AWeGotCompagnieCharacter::ToggleLockOn()
-{
-	if (bForceNoLockOn)
-	{
-		bLockOn = false;
-		return;
-	}
-	if (!bLockOn && IsValid(BossMesh))
-	{
-		bLockOn = true;
-		ShowLockOnWidget(true);
-	}
-	else
-	{
-		bLockOn = false;
-		ShowLockOnWidget(false);
-	}
-}
-
-void AWeGotCompagnieCharacter::TurnAtRate(float Rate)
-{
-	if (Rate != 0.0f)
-	{
-		// calculate delta for this frame from the rate information
-		AddControllerYawInput(Rate * TurnRateGamepad * GetWorld()->GetDeltaSeconds());
-		if (bLockOn)
-		{
-			bLockOn = false; // disengage lockon on camera turned
-			ShowLockOnWidget(false);
-		}
-	}
-	else if (bLockOn)
-	{
-		if (bForceNoLockOn)
-		{
-			bLockOn = false;
-			ShowLockOnWidget(false);
-		}
-		FVector LockOnLocation{ BossMesh->GetSocketLocation(TEXT("Neck_LowSocket")) };
-		FVector LookAt{ LockOnLocation - GetActorLocation() };
-		GetController()->SetControlRotation(FMath::RInterpTo(GetController()->GetControlRotation(), LookAt.Rotation(), 0.5f, 0.5f));
-	}
-}
-
-void AWeGotCompagnieCharacter::LookUpAtRate(float Rate)
-{
-	if (Rate != 0.0f)
-	{
-		// calculate delta for this frame from the rate information
-		AddControllerPitchInput(Rate * TurnRateGamepad * GetWorld()->GetDeltaSeconds());
-		if (bLockOn)
-		{
-			bLockOn = false; // disengage lockon on camera turned
-			ShowLockOnWidget(false);
-		}
-	}
-	 // See TurnAtRate for lockon implementation
-}
-
-void AWeGotCompagnieCharacter::MoveForward(float Value)
-{
-	if ((Controller != nullptr) && (Value != 0.0f))
-	{
-		// find out which way is forward
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0, Rotation.Yaw, 0);
-
-		// get forward vector
-		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-		AddMovementInput(Direction, Value);
-	}
-
-	// Update the player state
-	UpdateLocomotionState();
-}
-
-void AWeGotCompagnieCharacter::MoveRight(float Value)
-{
-	if ( (Controller != nullptr) && (Value != 0.0f) )
-	{
-		// find out which way is right
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0, Rotation.Yaw, 0);
-	
-		// get right vector 
-		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
-		// add movement in that direction
-		AddMovementInput(Direction, Value);
-	}
-
-	// Update the player state
-	UpdateLocomotionState();
-}
-
 void AWeGotCompagnieCharacter::BeginPlay()
 {
 	Super::BeginPlay();
@@ -221,34 +98,6 @@ void AWeGotCompagnieCharacter::BeginPlay()
 void AWeGotCompagnieCharacter::Tick(float DeltaSecond)
 {
 	Super::Tick(DeltaSecond);
-
-	// Debug
-	//DrawDebugDirectionalArrow(GetWorld(), GetActorLocation(), GetActorLocation() + GetMovementComponent()->Velocity, 10.0f, FColor::Red, false, -1.0f, (uint8)0U, 3.0f);
-	//DrawDebugCoordinateSystem(GetWorld(), GetActorLocation(), GetActorRotation(), 20.0f, false, -1.0f, (uint8)1U, 5.0f);
 }
 
-// Put this function at the bottom of all of the key-delegated movement function
- void AWeGotCompagnieCharacter::UpdateLocomotionState()
- {
- 	if (GetMovementComponent()->Velocity.Dot(GetActorUpVector()) == 0.0f)
- 	{
- 		if (GetMovementComponent()->Velocity.Length() == 0.0f)
- 		{
-			CurrentLocomotionState = EPlayerState::Idle;
- 		}
-		else
-		{
-			CurrentLocomotionState = EPlayerState::Moving;
-		}
- 	}
- 	else
- 	{
- 		CurrentLocomotionState = EPlayerState::Jump;
- 	}
- }
-
-void AWeGotCompagnieCharacter::KeyPressed(FKey Key)
-{
-	PlayerComboTree->KeyPressed(Key, GetWorld()->TimeSeconds);
-}
 
