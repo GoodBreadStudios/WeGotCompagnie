@@ -10,10 +10,7 @@
 		}
 	],
 	"settings": {
-		"typescript.tsc.autoDetect": "off",
-		"C_Cpp.intelliSenseEngineFallback": "Enabled",
-		"C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
-		"UEIntellisenseFixes.cppStandard": "c++17"
+		"typescript.tsc.autoDetect": "off"
 	},
 	"extensions": {
 		"recommendations": [

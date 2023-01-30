@@ -1,37 +1,557 @@
 [
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnie.Build.cs",
-		"command": "/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp'",
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Classes/FMODAmbientSound.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
 		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnie.cpp",
-		"command": "/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp'",
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Classes/FMODAnimNotifyPlay.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
 		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnie.h",
-		"command": "/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp'",
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Classes/FMODAsset.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
 		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieCharacter.cpp",
-		"command": "/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp'",
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Classes/FMODAudioComponent.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
 		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieCharacter.h",
-		"command": "/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp'",
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Classes/FMODBank.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
 		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieGameMode.cpp",
-		"command": "/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp'",
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Classes/FMODBlueprintStatics.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
 		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieGameMode.h",
-		"command": "/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp'",
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Classes/FMODBus.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Classes/FMODEvent.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Classes/FMODPort.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Classes/FMODSettings.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Classes/FMODSnapshot.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Classes/FMODSnapshotReverb.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Classes/FMODVCA.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/FMODStudio_APL.xml",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/FMODStudio.Build.cs",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/FMODStudioL_APL.xml",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODAmbientSound.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODAnimNotifyPlay.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODAsset.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODAssetLookup.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODAssetLookup.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODAssetTable.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODAssetTable.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODAudioComponent.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODBank.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODBankLookup.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODBankLookup.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODBlueprintStatics.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODBus.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODEvent.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODFileCallbacks.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODFileCallbacks.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODListener.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODListener.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODPlatform.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODPort.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODSettings.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODSnapshot.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODSnapshotReverb.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODStudioModule.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODStudioPrivatePCH.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/FMODVCA.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/Sequencer/FMODEventControlSection.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/Sequencer/FMODEventControlSection.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/Sequencer/FMODEventControlSectionTemplate.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/Sequencer/FMODEventControlSectionTemplate.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/Sequencer/FMODEventControlTrack.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/Sequencer/FMODEventControlTrack.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/Sequencer/FMODEventParameterSectionTemplate.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/Sequencer/FMODEventParameterSectionTemplate.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/Sequencer/FMODEventParameterTrack.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Private/Sequencer/FMODEventParameterTrack.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Public/FMOD/fmod_codec.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Public/FMOD/fmod_common.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Public/FMOD/fmod_dsp_effects.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Public/FMOD/fmod_dsp.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Public/FMOD/fmod_errors.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Public/FMOD/fmod_output.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Public/FMOD/fmod_studio_common.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Public/FMOD/fmod_studio.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Public/FMOD/fmod_studio.hpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Public/FMOD/fmod.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Public/FMOD/fmod.hpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Public/FMODStudioModule.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudio/Public/FMODUtils.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudio.36.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Classes/FMODAmbientSoundActorFactory.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Classes/FMODAssetBuilder.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Classes/FMODGenerateAssetsCommandlet.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/FMODStudioEditor.Build.cs",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/AssetTypeActions_FMODEvent.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/AssetTypeActions_FMODEvent.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODAmbientSoundActorFactory.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODAssetBroker.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODAssetBuilder.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODAudioComponentDetails.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODAudioComponentDetails.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODAudioComponentVisualizer.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODAudioComponentVisualizer.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODBankUpdateNotifier.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODBankUpdateNotifier.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODEventEditor.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODEventEditor.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODGenerateAssetsCommandlet.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODSettingsCustomization.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODSettingsCustomization.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODStudioEditorModule.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODStudioEditorPrivatePCH.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODStudioStyle.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/FMODStudioStyle.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/Sequencer/FMODChannelEditors.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/Sequencer/FMODChannelEditors.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/Sequencer/FMODEventControlTrackEditor.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/Sequencer/FMODEventControlTrackEditor.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/Sequencer/FMODEventParameterTrackEditor.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/Sequencer/FMODEventParameterTrackEditor.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/Sequencer/FMODParameterSection.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/Sequencer/FMODParameterSection.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/SFMODEventEditorPanel.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Private/SFMODEventEditorPanel.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Plugins/FMODStudio/Source/FMODStudioEditor/Public/FMODStudioEditorModule.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/FMODStudioEditor.37.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Source/WeGotCompagnie/ComboTree.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Source/WeGotCompagnie/ComboTree.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Source/WeGotCompagnie/HelperMacros.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Source/WeGotCompagnie/HelperMacros.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnie.Build.cs",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnie.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnie.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieCharacter.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieCharacter.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieGameMode.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp",
+		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+	},
+	{
+		"file": "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieGameMode.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp",
 		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
 	}
 ]

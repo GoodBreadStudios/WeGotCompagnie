@@ -1,5 +1,5 @@
 -include "/Users/Shared/Epic Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/PortalMessages/Definitions.PortalMessages.h" 
--include "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Intermediate/Build/Mac/x86_64/WeGotCompagnieEditor/Development/CoreUObject/SharedPCH.CoreUObject.ShadowErrors.h" 
+-include "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Intermediate/Build/Mac/x86_64/WeGotCompagnieEditor/Development/CoreUObject/SharedPCH.CoreUObject.ShadowErrors.h" 
 -I "/Users/Shared/Epic Games/UE_5.0/Engine/Source" 
 -I "/Users/Shared/Epic Games/UE_5.0/Engine/Source/Runtime/Portal/Messages/Private" 
 -I "/Users/Shared/Epic Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/PortalMessages" 

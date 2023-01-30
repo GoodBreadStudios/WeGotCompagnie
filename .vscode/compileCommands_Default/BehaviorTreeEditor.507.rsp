@@ -1,5 +1,5 @@
 -include "/Users/Shared/Epic Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/BehaviorTreeEditor/Definitions.BehaviorTreeEditor.h" 
--include "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Intermediate/Build/Mac/x86_64/WeGotCompagnieEditor/Development/UnrealEd/SharedPCH.UnrealEd.ShadowErrors.h" 
+-include "/Users/haleyinzunza/Documents/GitHub/WeGotCompagnie/Intermediate/Build/Mac/x86_64/WeGotCompagnieEditor/Development/UnrealEd/SharedPCH.UnrealEd.ShadowErrors.h" 
 -I "/Users/Shared/Epic Games/UE_5.0/Engine/Source" 
 -I "/Users/Shared/Epic Games/UE_5.0/Engine/Source/Editor/BehaviorTreeEditor/Private" 
 -I "/Users/Shared/Epic Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Core" 
