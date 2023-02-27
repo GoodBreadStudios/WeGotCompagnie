@@ -36,6 +36,10 @@
 		{
 			"Name": "LauncherChunkInstaller",
 			"Enabled": false
+		},
+		{
+			"Name": "CommonUI",
+			"Enabled": true
 		}
 	]
 }
