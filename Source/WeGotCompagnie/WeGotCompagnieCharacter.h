@@ -7,7 +7,9 @@
 #include "HelperMacros.h"
 #include "Components/BillboardComponent.h"
 #include "Components/WidgetComponent.h"
+#include "CommonActivatableWidget.h"
 #include "WeGotCompagnieCharacter.generated.h"
+
 
 // https://forums.unrealengine.com/t/creating-enums-in-c/465555
 //// Use the enum in BP, only use this when the design is finalized.
