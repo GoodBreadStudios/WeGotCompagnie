@@ -34,9 +34,6 @@
 		<relationship name="banks">
 			<destination>{b5d1bea4-c980-4fca-a548-bb5c6e1ade93}</destination>
 		</relationship>
-		<relationship name="defaultEvent">
-			<destination>{d24bdf6c-4fdb-4b50-a11a-cdc98d5010dd}</destination>
-		</relationship>
 	</object>
 	<object class="EventMixer" id="{af6193db-b331-4bb9-942a-04301782bdfc}">
 		<relationship name="masterBus">
@@ -121,6 +118,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{f3946f0a-12b3-4c25-b1a1-1080eaa2c275}">
+		<property name="volume">
+			<value>-6</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{f565d737-e7c0-4bf4-9b69-0d1359a6bc87}</destination>
 		</relationship>
@@ -131,6 +131,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{945041cf-625c-4337-8d05-c9371b4de89d}">
+		<property name="volume">
+			<value>-6</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{ec21c72d-e429-447e-aedb-86ef0ffb1a95}</destination>
 		</relationship>
