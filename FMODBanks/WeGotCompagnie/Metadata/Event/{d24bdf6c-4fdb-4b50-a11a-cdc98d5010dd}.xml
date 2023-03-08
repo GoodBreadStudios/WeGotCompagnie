@@ -96,12 +96,13 @@
 	<object class="MixerBusEffectChain" id="{9ab28785-b5cb-42cb-8497-5124b6bb6b00}">
 		<relationship name="effects">
 			<destination>{e3a869f3-d9ed-49d0-a099-77cb863db7be}</destination>
+			<destination>{f0a87fed-43fe-4076-a1bb-a2b700deb2d5}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{0273ddc5-b707-4f92-8733-7df4d4ac93d2}" />
 	<object class="MultiSound" id="{d3944a28-c0aa-4718-b13a-a50d6ebf9304}">
 		<property name="volume">
-			<value>6</value>
+			<value>10</value>
 		</property>
 		<property name="playlistMode">
 			<value>1</value>
@@ -119,6 +120,11 @@
 	</object>
 	<object class="MixerBusFader" id="{dc578499-d387-4553-8dfa-d9d58a8de853}" />
 	<object class="MixerBusFader" id="{e3a869f3-d9ed-49d0-a099-77cb863db7be}" />
+	<object class="LimiterEffect" id="{f0a87fed-43fe-4076-a1bb-a2b700deb2d5}">
+		<property name="boost">
+			<value>1.70000005</value>
+		</property>
+	</object>
 	<object class="SingleSound" id="{69ef657e-d861-4bdc-a13a-c3615be72f46}">
 		<relationship name="audioFile">
 			<destination>{7564746c-bbb4-433f-9223-229b8e238428}</destination>
