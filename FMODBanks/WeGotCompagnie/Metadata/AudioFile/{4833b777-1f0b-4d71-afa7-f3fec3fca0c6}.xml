@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{4833b777-1f0b-4d71-afa7-f3fec3fca0c6}">
+		<property name="assetPath">
+			<value>Boss SFX/tuba death.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>22.751836734693878</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9cc28386-acee-4077-b039-ef67372fede0}</destination>
+		</relationship>
+	</object>
+</objects>
