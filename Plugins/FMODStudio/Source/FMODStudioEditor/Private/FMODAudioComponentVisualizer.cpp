@@ -1,12 +1,12 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2022.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
 
 #include "FMODAudioComponentVisualizer.h"
 #include "FMODAudioComponent.h"
 #include "FMODUtils.h"
 #include "FMODEvent.h"
 #include "fmod_studio.hpp"
-#include "Engine/Public/SceneView.h"
-#include "Engine/Public/SceneManagement.h"
+#include "SceneView.h"
+#include "SceneManagement.h"
 
 void FFMODAudioComponentVisualizer::DrawVisualization(const UActorComponent *Component, const FSceneView *View, FPrimitiveDrawInterface *PDI)
 {

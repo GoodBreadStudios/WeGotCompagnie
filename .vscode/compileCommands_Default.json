@@ -1,37 +1,90 @@
 [
 	{
+		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/ComboTree.cpp",
+		"arguments": [
+			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
+	},
+	{
+		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/ComboTree.h",
+		"arguments": [
+			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
+	},
+	{
+		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/HelperMacros.cpp",
+		"arguments": [
+			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
+	},
+	{
+		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/HelperMacros.h",
+		"arguments": [
+			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
+	},
+	{
 		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnie.Build.cs",
-		"command": "/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp'",
-		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+		"arguments": [
+			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
 	},
 	{
 		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnie.cpp",
-		"command": "/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp'",
-		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+		"arguments": [
+			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
 	},
 	{
 		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnie.h",
-		"command": "/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp'",
-		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+		"arguments": [
+			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
 	},
 	{
 		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieCharacter.cpp",
-		"command": "/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp'",
-		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+		"arguments": [
+			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
 	},
 	{
 		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieCharacter.h",
-		"command": "/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp'",
-		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+		"arguments": [
+			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
 	},
 	{
 		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieGameMode.cpp",
-		"command": "/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp'",
-		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+		"arguments": [
+			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
 	},
 	{
 		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieGameMode.h",
-		"command": "/Applications/Xcode13.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @'/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.204.rsp'",
-		"directory": "/Users/Shared/Epic Games/UE_5.0/Engine/Source"
+		"arguments": [
+			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
 	}
 ]

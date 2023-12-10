@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2022.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2023.
 
 #include "FMODSettingsCustomization.h"
 
@@ -62,7 +62,7 @@ public:
             [
                 SNew(SBorder)
                 .BorderBackgroundColor(this, &SSettingsMessage::GetBorderColor)
-                .BorderImage(FEditorStyle::GetBrush("ToolPanel.LightGroupBorder"))
+                .BorderImage(FAppStyle::GetBrush("ToolPanel.LightGroupBorder"))
                 .Padding(8.0f)
                 [
                     SNew(SWidgetSwitcher)
@@ -111,7 +111,7 @@ private:
         TSharedRef<SHorizontalBox> Result = SNew(SHorizontalBox)
 
             // Status icon
-            + SHorizontalBox::Slot().AutoWidth().VAlign(VAlign_Center)[SNew(SImage).Image(FEditorStyle::GetBrush(IconName))]
+            + SHorizontalBox::Slot().AutoWidth().VAlign(VAlign_Center)[SNew(SImage).Image(FAppStyle::GetBrush(IconName))]
 
             // Notice
             + SHorizontalBox::Slot()

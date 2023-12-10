@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2022.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
 
 #include "FMODStudioEditorModule.h"
 #include "FMODStudioModule.h"
@@ -20,31 +20,32 @@
 #include "Sequencer/FMODEventParameterTrackEditor.h"
 #include "AssetTypeActions_FMODEvent.h"
 
-#include "AssetRegistryModule.h"
-#include "UnrealEd/Public/AssetSelection.h"
-#include "Slate/Public/Framework/Notifications/NotificationManager.h"
-#include "Slate/Public/Widgets/Notifications/SNotificationList.h"
+#include "Framework/Application/SlateApplication.h"
+#include "AssetRegistry/AssetRegistryModule.h"
+#include "AssetSelection.h"
+#include "Framework/Notifications/NotificationManager.h"
+#include "Widgets/Notifications/SNotificationList.h"
 #include "Developer/Settings/Public/ISettingsModule.h"
 #include "Developer/Settings/Public/ISettingsSection.h"
-#include "UnrealEd/Public/Editor.h"
+#include "Editor.h"
 #include "Slate/SceneViewport.h"
-#include "LevelEditor/Public/LevelEditor.h"
-#include "Sockets/Public/SocketSubsystem.h"
-#include "Sockets/Public/Sockets.h"
-#include "Sockets/Public/IPAddress.h"
-#include "UnrealEd/Public/FileHelpers.h"
-#include "Sequencer/Public/ISequencerModule.h"
-#include "Sequencer/Public/SequencerChannelInterface.h"
-#include "MovieSceneTools/Public/ClipboardTypes.h"
-#include "Engine/Public/DebugRenderSceneProxy.h"
-#include "Engine/Classes/Debug/DebugDrawService.h"
+#include "Editor/LevelEditor/Public/LevelEditor.h"
+#include "SocketSubsystem.h"
+#include "Sockets.h"
+#include "IPAddress.h"
+#include "FileHelpers.h"
+#include "ISequencerModule.h"
+#include "SequencerChannelInterface.h"
+#include "ClipboardTypes.h"
+#include "DebugRenderSceneProxy.h"
+#include "Debug/DebugDrawService.h"
 #include "Settings/ProjectPackagingSettings.h"
 #include "UnrealEdGlobals.h"
-#include "UnrealEd/Public/LevelEditorViewport.h"
+#include "LevelEditorViewport.h"
 #include "ActorFactories/ActorFactory.h"
 #include "Engine/Canvas.h"
 #include "Editor/UnrealEdEngine.h"
-#include "Slate/Public/Framework/MultiBox/MultiBoxBuilder.h"
+#include "Framework/MultiBox/MultiBoxBuilder.h"
 #include "Misc/MessageDialog.h"
 #include "HAL/FileManager.h"
 #include "Interfaces/IMainFrameModule.h"
@@ -388,8 +389,6 @@ void FFMODStudioEditorModule::ProcessBanks()
         BankUpdateNotifier.SetFilePath(Settings.GetFullBankPath());
 
         BankUpdateNotifier.EnableUpdate(true);
-
-        IFMODStudioModule::Get().RefreshSettings();
     }
 }
 
@@ -412,7 +411,7 @@ void FFMODStudioEditorModule::RegisterHelpMenuEntries()
         NAME_None,
         LOCTEXT("FMODHelpCHMTitle", "FMOD Documentation..."),
         LOCTEXT("FMODHelpCHMToolTip", "Opens the local FMOD documentation."),
-        FSlateIcon(FEditorStyle::GetStyleSetName(), "LevelEditor.BrowseAPIReference"),
+        FSlateIcon(FAppStyle::GetAppStyleSetName(), "LevelEditor.BrowseAPIReference"),
         FUIAction(FExecuteAction::CreateRaw(this, &FFMODStudioEditorModule::OpenIntegrationDocs))
     ));
 #endif
@@ -421,7 +420,7 @@ void FFMODStudioEditorModule::RegisterHelpMenuEntries()
         NAME_None,
         LOCTEXT("FMODHelpOnlineTitle", "FMOD Online Documentation..."),
         LOCTEXT("FMODHelpOnlineToolTip", "Go to the online FMOD documentation."),
-        FSlateIcon(FEditorStyle::GetStyleSetName(), "LevelEditor.BrowseDocumentation"),
+        FSlateIcon(FAppStyle::GetAppStyleSetName(), "LevelEditor.BrowseDocumentation"),
         FUIAction(FExecuteAction::CreateRaw(this, &FFMODStudioEditorModule::OpenAPIDocs))
     ));
 
@@ -429,7 +428,7 @@ void FFMODStudioEditorModule::RegisterHelpMenuEntries()
         NAME_None,
         LOCTEXT("FMODHelpVideosTitle", "FMOD Tutorial Videos..."),
         LOCTEXT("FMODHelpVideosToolTip", "Go to the online FMOD tutorial videos."),
-        FSlateIcon(FEditorStyle::GetStyleSetName(), "LevelEditor.Tutorials"),
+        FSlateIcon(FAppStyle::GetAppStyleSetName(), "LevelEditor.Tutorials"),
         FUIAction(FExecuteAction::CreateRaw(this, &FFMODStudioEditorModule::OpenVideoTutorials))
     ));
 
@@ -791,9 +790,12 @@ void FFMODStudioEditorModule::ValidateFMOD()
                     if (FMessageDialog::Open(EAppMsgType::YesNo, Message) == EAppReturnType::Yes)
                     {
                         Settings.Locales = StudioLocales;
-                        Settings.Locales[0].bDefault = true;
+                        if (Settings.Locales.Num() > 0)
+                        {
+                            Settings.Locales[0].bDefault = true;
+                        }
                         SettingsSection->Save();
-                        IFMODStudioModule::Get().RefreshSettings();
+                        IFMODStudioModule::Get().ReloadBanks();
                     }
                 }
             }
@@ -1268,7 +1270,7 @@ void FFMODStudioEditorModule::ReloadBanks()
 void FFMODStudioEditorModule::ShowNotification(const FText &Text, SNotificationItem::ECompletionState State)
 {
     FNotificationInfo Info(Text);
-    Info.Image = FEditorStyle::GetBrush(TEXT("NoBrush"));
+    Info.Image = FAppStyle::GetBrush(TEXT("NoBrush"));
     Info.FadeInDuration = 0.1f;
     Info.FadeOutDuration = 0.5f;
     Info.ExpireDuration = State == SNotificationItem::CS_Fail ? 6.0f : 1.5f;

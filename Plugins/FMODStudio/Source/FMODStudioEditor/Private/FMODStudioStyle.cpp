@@ -1,8 +1,8 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2022.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
 
 #include "FMODStudioStyle.h"
 #include "Styling/SlateStyleRegistry.h"
-#include "EditorStyle/Public/Interfaces/IEditorStyleModule.h"
+#include "Editor/EditorStyle/Public/Interfaces/IEditorStyleModule.h"
 #include "Modules/ModuleManager.h"
 
 

@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2022.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
 
 #pragma once
 
@@ -37,6 +37,9 @@ struct FTimelineMarkerProperties
 {
     FString Name;
     int32 Position;
+    FTimelineMarkerProperties()
+        : Position(0)
+    {}
 };
 
 /** Used to store callback info from FMOD thread to our event */
@@ -48,22 +51,27 @@ struct FTimelineBeatProperties
     float Tempo;
     int32 TimeSignatureUpper;
     int32 TimeSignatureLower;
+    FTimelineBeatProperties()
+        : Bar(0)
+        , Beat(0)
+        , Position(0)
+        , Tempo(0.0f)
+        , TimeSignatureUpper(0)
+        , TimeSignatureLower(0)
+    {}
 };
 
 USTRUCT(BlueprintType)
 struct FFMODAttenuationDetails
 {
     GENERATED_USTRUCT_BODY()
-
     /** Should we use Attenuation set in Studio or be able to modify in Editor. */
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FMOD|Attenuation")
     uint32 bOverrideAttenuation : 1;
-
     /** Override the event's 3D minimum distance. */
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FMOD|Attenuation",
         meta = (ClampMin = "0.0", UIMin = "0.0", EditCondition = "bOverrideAttenuation"))
     float MinimumDistance;
-
     /** Override the event's 3D maximum distance. */
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FMOD|Attenuation",
         meta = (ClampMin = "0.0", UIMin = "0.0", EditCondition = "bOverrideAttenuation"))
@@ -80,15 +88,12 @@ USTRUCT(BlueprintType)
 struct FFMODOcclusionDetails
 {
     GENERATED_USTRUCT_BODY()
-
     /** Enable Occlusion Settings. */
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FMOD|Occlusion")
     bool bEnableOcclusion;
-
     /* Which trace channel to use for audio occlusion checks. */
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FMOD|Occlusion", meta = (EditCondition = "bEnableOcclusion"))
     TEnumAsByte<enum ECollisionChannel> OcclusionTraceChannel;
-
     /** Whether or not to enable complex geometry occlusion checks. */
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="FMOD|Occlusion", meta=(EditCondition = "bEnableOcclusion"))
     bool bUseComplexCollisionForOcclusion;
@@ -102,6 +107,8 @@ struct FFMODOcclusionDetails
 
 /** called when an event stops, either because it played to completion or because a Stop() call turned it off early */
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnEventStopped);
+/** called when a sound stops */
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnSoundStopped);
 /** called when we reach a named marker on the timeline */
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnTimelineMarker, FString, Name, int32, Position);
 /** called when we reach a beat on the timeline */
@@ -112,7 +119,6 @@ namespace FMOD
 {
 class DSP;
 class Sound;
-
 namespace Studio
 {
 class EventDescription;
@@ -169,6 +175,10 @@ public:
     /** Called when an event stops, either because it played to completion or because a Stop() call turned it off early. */
     UPROPERTY(BlueprintAssignable)
     FOnEventStopped OnEventStopped;
+
+    /** Called when a sound stops. */
+    UPROPERTY(BlueprintAssignable)
+    FOnSoundStopped OnSoundStopped;
 
     /** Called when we reach a named marker (if bEnableTimelineCallbacks is true). */
     UPROPERTY(BlueprintAssignable)
@@ -302,6 +312,9 @@ private:
     /** Cache default event parameter values. */
     void CacheDefaultParameterValues();
 
+    /** Check that only player driven parameters are added to the cache. */
+    void UpdateCachedParameterValues();
+
     /** Update gain and low-pass based on interior volumes. */
     void UpdateInteriorVolumes();
 
@@ -326,6 +339,9 @@ private:
     /** Called when the event has finished stopping. */
     void OnPlaybackCompleted();
 
+    void EventCallbackSoundStopped();
+    bool TriggerSoundStoppedDelegate;
+
 // Begin ActorComponent interface.
     /** Called when a component is registered, after Scene is set, but before CreateRenderState_Concurrent or OnCreatePhysicsState are called. */
     virtual void OnRegister() override;
@@ -349,6 +365,9 @@ private:
 
     /** Release the Studio Instance. */
     void ReleaseEventInstance();
+
+    /** Check if a parameter is game controlled or automated to determine if it should be cached. */
+    bool ShouldCacheParameter(const FMOD_STUDIO_PARAMETER_DESCRIPTION& ParameterDescription);
 
     /** Return a cached reference to the current IFMODStudioModule.*/
     IFMODStudioModule& GetStudioModule()

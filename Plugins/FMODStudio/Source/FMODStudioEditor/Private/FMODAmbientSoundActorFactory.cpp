@@ -1,10 +1,10 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2022.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
 
 #include "FMODAmbientSoundActorFactory.h"
 #include "FMODStudioEditorPrivatePCH.h"
 #include "FMODAmbientSound.h"
 #include "FMODEvent.h"
-#include "AssetRegistry/Public/AssetData.h"
+#include "AssetRegistry/AssetData.h"
 #include "Editor/EditorEngine.h"
 
 UFMODAmbientSoundActorFactory::UFMODAmbientSoundActorFactory(const FObjectInitializer &ObjectInitializer)

@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2022.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
 
 #include "FMODEventControlSectionTemplate.h"
 #include "FMODAmbientSound.h"
@@ -11,12 +11,15 @@ struct FPlayingToken : IMovieScenePreAnimatedToken
     FPlayingToken(UObject &InObject)
     {
         bPlaying = false;
+        Position = 0;
 
         if (UFMODAudioComponent *AudioComponent = Cast<UFMODAudioComponent>(&InObject))
         {
             if (IsValid(AudioComponent))
             {
                 bPlaying = AudioComponent->IsPlaying();
+                Position = AudioComponent->GetTimelinePosition();
+                Transform = AudioComponent->GetComponentTransform();
             }
         }
     }
@@ -30,16 +33,20 @@ struct FPlayingToken : IMovieScenePreAnimatedToken
             if (bPlaying)
             {
                 AudioComponent->Play();
+                AudioComponent->SetTimelinePosition(Position);
             }
             else
             {
                 AudioComponent->Stop();
+                AudioComponent->SetWorldTransform(Transform);
             }
         }
     }
 
 private:
     bool bPlaying;
+    int32 Position;
+    FTransform Transform;
 };
 
 struct FPlayingTokenProducer : IMovieScenePreAnimatedTokenProducer
@@ -48,12 +55,6 @@ struct FPlayingTokenProducer : IMovieScenePreAnimatedTokenProducer
 
 private:
     virtual IMovieScenePreAnimatedTokenPtr CacheExistingState(UObject &Object) const override { return FPlayingToken(Object); }
-};
-
-struct FFMODEventKeyState : IPersistentEvaluationData
-{
-    FKeyHandle LastKeyHandle;
-    FKeyHandle InvalidKeyHandle;
 };
 
 struct FFMODEventControlExecutionToken : IMovieSceneExecutionToken
@@ -80,7 +81,17 @@ struct FFMODEventControlExecutionToken : IMovieSceneExecutionToken
 
             if (IsValid(AudioComponent))
             {
-                Player.SavePreAnimatedState(*AudioComponent, FPlayingTokenProducer::GetAnimTypeID(), FPlayingTokenProducer());
+                EFMODSystemContext::Type SystemContext =
+                    (GWorld && GWorld->WorldType == EWorldType::Editor) ? EFMODSystemContext::Auditioning : EFMODSystemContext::Runtime;
+
+                if (EventControlKey == EFMODEventControlKey::Stop && KeyTime == 0 && SystemContext == EFMODSystemContext::Auditioning)
+                {
+                    // Skip state saving when auditioning sequencer
+                }
+                else
+                {
+                    Player.SavePreAnimatedState(*AudioComponent, FPlayingTokenProducer::GetAnimTypeID(), FPlayingTokenProducer());
+                }
 
                 if (EventControlKey == EFMODEventControlKey::Play)
                 {
@@ -89,8 +100,6 @@ struct FFMODEventControlExecutionToken : IMovieSceneExecutionToken
                         AudioComponent->Stop();
                     }
 
-                    EFMODSystemContext::Type SystemContext =
-                        (GWorld && GWorld->WorldType == EWorldType::Editor) ? EFMODSystemContext::Editor : EFMODSystemContext::Runtime;
                     AudioComponent->PlayInternal(SystemContext);
                 }
                 else if (EventControlKey == EFMODEventControlKey::Stop)

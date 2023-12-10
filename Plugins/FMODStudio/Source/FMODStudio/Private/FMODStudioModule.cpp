@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2022.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
 
 #include "FMODStudioModule.h"
 #include "FMODSettings.h"
@@ -122,12 +122,13 @@ public:
     FFMODStudioSystemClockSink(FMOD::Studio::System *SystemIn)
         : System(SystemIn)
         , LastResult(FMOD_OK)
+        , Paused(false)
     {
     }
 
     virtual void TickRender(FTimespan DeltaTime, FTimespan Timecode) override
     {
-        if (System)
+        if (System && !Paused)
         {
             if (UpdateListenerPosition.IsBound())
             {
@@ -142,9 +143,14 @@ public:
 
     void OnDestroyStudioSystem() { System = nullptr; }
 
+    void SetPaused(bool PausedIn) { Paused = PausedIn; }
+
     FMOD::Studio::System *System;
     FMOD_RESULT LastResult;
     FUpdateListenerPosition UpdateListenerPosition;
+
+private:
+    bool Paused;
 };
 
 class FFMODStudioModule : public IFMODStudioModule
@@ -194,6 +200,7 @@ public:
     bool LoadLibraries();
 
     void LoadBanks(EFMODSystemContext::Type Type);
+    void UnloadBanks(EFMODSystemContext::Type Type);
 
 #if WITH_EDITOR
     void ReloadBanks();
@@ -218,8 +225,6 @@ public:
     virtual const FFMODListener &GetNearestListener(const FVector &Location) override;
 
     virtual bool HasListenerMoved() override;
-
-    virtual void RefreshSettings();
 
     virtual void SetSystemPaused(bool paused) override;
 
@@ -253,6 +258,8 @@ public:
     virtual bool SetLocale(const FString& Locale) override;
 
     virtual FString GetLocale() override;
+
+    virtual FString GetDefaultLocale() override;
 
     void ResetInterpolation();
 
@@ -496,10 +503,10 @@ void FFMODStudioModule::StartupModule()
 
         AcquireFMODFileSystem();
 
-        RefreshSettings();
-
         if (GIsEditor)
         {
+            AssetTable.Load();
+            AssetTable.SetLocale(GetDefaultLocale());
             CreateStudioSystem(EFMODSystemContext::Auditioning);
             CreateStudioSystem(EFMODSystemContext::Editor);
         }
@@ -775,61 +782,33 @@ void FFMODStudioModule::DestroyStudioSystem(EFMODSystemContext::Type Type)
         ClockSinks[Type].Reset();
     }
 
-    // Unload all events and banks to remove warning spam when using split banks
-    if (StudioSystem[Type] && bLoadAllSampleData)
-    {
-        int bankCount;
-        verifyfmod(StudioSystem[Type]->getBankCount(&bankCount));
-        if (bankCount > 0)
-        {
-            TArray<FMOD::Studio::Bank *> bankArray;
-            TArray<FMOD::Studio::EventDescription *> eventArray;
-            TArray<FMOD::Studio::EventInstance *> instanceArray;
-
-            bankArray.SetNumUninitialized(bankCount, false);
-            verifyfmod(StudioSystem[Type]->getBankList(bankArray.GetData(), bankCount, &bankCount));
-            for (int i = 0; i < bankCount; i++)
-            {
-                int eventCount;
-                verifyfmod(bankArray[i]->getEventCount(&eventCount));
-                if (eventCount > 0)
-                {
-                    eventArray.SetNumUninitialized(eventCount, false);
-                    verifyfmod(bankArray[i]->getEventList(eventArray.GetData(), eventCount, &eventCount));
-                    for (int j = 0; j < eventCount; j++)
-                    {
-                        int instanceCount;
-                        verifyfmod(eventArray[j]->getInstanceCount(&instanceCount));
-                        if (instanceCount > 0)
-                        {
-                            instanceArray.SetNumUninitialized(instanceCount, false);
-                            verifyfmod(eventArray[j]->getInstanceList(instanceArray.GetData(), instanceCount, &instanceCount));
-                            for (int k = 0; k < instanceCount; k++)
-                            {
-                                verifyfmod(instanceArray[k]->stop(FMOD_STUDIO_STOP_IMMEDIATE));
-                                verifyfmod(instanceArray[k]->release());
-                            }
-                        }
-                    }
-                }
-            }
-
-            for (int i = 0; i < bankCount; i++)
-            {
-                FMOD_STUDIO_LOADING_STATE state;
-                bankArray[i]->getSampleLoadingState(&state);
-                if (state == FMOD_STUDIO_LOADING_STATE_LOADED)
-                {
-                    verifyfmod(bankArray[i]->unloadSampleData());
-                }
-            }
-        }
-    }
+    UnloadBanks(Type);
 
     if (StudioSystem[Type])
     {
         verifyfmod(StudioSystem[Type]->release());
         StudioSystem[Type] = nullptr;
+    }
+}
+
+void FFMODStudioModule::UnloadBanks(EFMODSystemContext::Type Type)
+{
+    if (StudioSystem[Type])
+    {
+        int bankCount;
+        verifyfmod(StudioSystem[Type]->getBankCount(&bankCount));
+        if (bankCount > 0)
+        {
+            TArray<FMOD::Studio::Bank*> bankArray;
+
+            bankArray.SetNumUninitialized(bankCount, false);
+            verifyfmod(StudioSystem[Type]->getBankList(bankArray.GetData(), bankCount, &bankCount));
+
+            for (int i = 0; i < bankCount; i++)
+            {
+                verifyfmod(bankArray[i]->unload());
+            }
+        }
     }
 }
 
@@ -1034,19 +1013,19 @@ void FFMODStudioModule::FinishSetListenerPosition(int NumListeners)
     }
 
     // Apply a reverb snapshot from the listener position(s)
-    AAudioVolume *BestVolume = nullptr;
+    TWeakObjectPtr<AAudioVolume> BestVolume = nullptr;
     for (int i = 0; i < ListenerCount; ++i)
     {
         AAudioVolume *CandidateVolume = Listeners[i].Volume;
 
-        if (BestVolume == nullptr || (IsValid(CandidateVolume) && IsValid(BestVolume) && CandidateVolume->GetPriority() > BestVolume->GetPriority()))
+        if (BestVolume == nullptr || (IsValid(CandidateVolume) && BestVolume.IsValid() && CandidateVolume->GetPriority() > BestVolume->GetPriority()))
         {
             BestVolume = CandidateVolume;
         }
     }
     UFMODSnapshotReverb *NewSnapshot = nullptr;
 
-    if (IsValid(BestVolume) && BestVolume->GetReverbSettings().bApplyReverb)
+    if (BestVolume.IsValid() && BestVolume->GetReverbSettings().bApplyReverb)
     {
         NewSnapshot = Cast<UFMODSnapshotReverb>(BestVolume->GetReverbSettings().ReverbEffect);
     }
@@ -1124,12 +1103,6 @@ void FFMODStudioModule::FinishSetListenerPosition(int NumListeners)
     }
 }
 
-void FFMODStudioModule::RefreshSettings()
-{
-    AssetTable.Load();
-    AssetTable.SetLocale(GetLocale());
-}
-
 void FFMODStudioModule::SetInPIE(bool bInPIE, bool simulating)
 {
     bIsInPIE = bInPIE;
@@ -1155,6 +1128,9 @@ void FFMODStudioModule::SetInPIE(bool bInPIE, bool simulating)
 
         // TODO: Stop sounds for the Editor system? What should happen if the user previews a sequence with transport
         // controls then starts a PIE session? What does happen?
+
+        AssetTable.Load();
+        AssetTable.SetLocale(GetDefaultLocale());
 
         ListenerCount = 1;
         CreateStudioSystem(EFMODSystemContext::Runtime);
@@ -1223,6 +1199,8 @@ void FFMODStudioModule::SetSystemPaused(bool paused)
             FMOD::ChannelGroup *MasterChannelGroup = nullptr;
             verifyfmod(LowLevelSystem->getMasterChannelGroup(&MasterChannelGroup));
             verifyfmod(MasterChannelGroup->setPaused(paused));
+
+            ClockSinks[EFMODSystemContext::Runtime]->SetPaused(paused);
 
             if (paused)
             {
@@ -1309,6 +1287,11 @@ bool FFMODStudioModule::SetLocale(const FString& LocaleName)
 }
 
 FString FFMODStudioModule::GetLocale()
+{
+    return AssetTable.GetLocale();
+}
+
+FString FFMODStudioModule::GetDefaultLocale()
 {
     FString LocaleCode = "";
     const UFMODSettings& Settings = *GetDefault<UFMODSettings>();
@@ -1479,16 +1462,14 @@ void FFMODStudioModule::ReloadBanks()
 {
     UE_LOG(LogFMOD, Verbose, TEXT("Refreshing auditioning system"));
 
-    DestroyStudioSystem(EFMODSystemContext::Auditioning);
-
-    RefreshSettings();
-
-    CreateStudioSystem(EFMODSystemContext::Auditioning);
-    LoadBanks(EFMODSystemContext::Auditioning);
-
+    StopAuditioningInstance();
+    UnloadBanks(EFMODSystemContext::Auditioning);
     DestroyStudioSystem(EFMODSystemContext::Editor);
+
+    AssetTable.Load();
+
+    LoadBanks(EFMODSystemContext::Auditioning);
     CreateStudioSystem(EFMODSystemContext::Editor);
-    LoadBanks(EFMODSystemContext::Editor);
 }
 #endif
 
