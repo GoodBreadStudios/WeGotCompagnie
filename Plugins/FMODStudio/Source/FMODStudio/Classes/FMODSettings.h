@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2021.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
 
 #pragma once
 
@@ -83,7 +83,7 @@ namespace EFMODPlatforms
         IOS,
         PS4,
         PS5,
-        Stadia,
+        Deprecated,
         Switch,
         XboxOne,
         XSX,
@@ -108,7 +108,6 @@ USTRUCT()
 struct FCustomPoolSizes
 {
     GENERATED_USTRUCT_BODY()
-
     /** Default = 0 (Disabled) units in bytes*/
     UPROPERTY(config, EditAnywhere, Category = InitSettings, meta = (ClampMin = "0"))
     int32 Desktop;
@@ -124,89 +123,79 @@ struct FCustomPoolSizes
     /** Default = 0 (Disabled) units in bytes*/
     UPROPERTY(config, EditAnywhere, Category = InitSettings, meta = (ClampMin = "0"))
     int32 XboxOne;
-
     FCustomPoolSizes()
         : Desktop(0)
         , Mobile(0)
         , PS4(0)
         , Switch(0)
         , XboxOne(0)
-    {
-    }
+    {}
 };
 
 USTRUCT()
 struct FFMODPlatformSettings
 {
     GENERATED_USTRUCT_BODY()
-
     // Real Channel Count
     UPROPERTY(config, EditAnywhere, Category = PlatformSettings, meta = (ClampMin = "0"))
     int32 RealChannelCount;
-
     /**
     * Sample rate to use, or 0 to match system rate.
     * eg. 0, 22050, 24000, 32000, 44100, 48000.
     */
     UPROPERTY(config, EditAnywhere, Category = PlatformSettings, meta = (ClampMin = "0"))
     int32 SampleRate;
-
     /**
     * Project Output Format, should match the mode set up for the Studio project.
     */
     UPROPERTY(config, EditAnywhere, Category = PlatformSettings)
     TEnumAsByte<EFMODSpeakerMode::Type> SpeakerMode;
-
     /**
     * Built-in output types that can be used to run the mixer.
     */
     UPROPERTY(config, EditAnywhere, Category = PlatformSettings)
     TEnumAsByte<EFMODOutput::Type> OutputType;
-
     /**
      * Use specified memory pool size, units in bytes. Disabled by default.
      * FMOD may become unstable if the limit is exceeded!
      */
     UPROPERTY(config, EditAnywhere, Category = PlatformSettings, meta = (ClampMin = "0"))
     int32 CustomPoolSize;
-
     /* Codecs
     */
     UPROPERTY(config, EditAnywhere, Category = PlatformSettings, meta = (ClampMin = "0"))
     TMap<TEnumAsByte<EFMODCodec::Type>, int32> Codecs;
-
     FFMODPlatformSettings()
         : RealChannelCount(64)
         , SampleRate(0)
         , SpeakerMode(EFMODSpeakerMode::Surround_5_1)
         , OutputType(EFMODOutput::TYPE_AUTODETECT)
         , CustomPoolSize(0)
-    {
-    }
+    {}
 };
 
 USTRUCT()
 struct FFMODProjectLocale
 {
     GENERATED_USTRUCT_BODY()
-
     /**
     * Human readable locale name, displayed in Blueprints.
     */
     UPROPERTY(config, EditAnywhere, Category = Localization)
     FString LocaleName;
-
     /**
     * Locale code. Must correspond to project locale codes in FMOD Studio project.
     */
     UPROPERTY(config, EditAnywhere, Category = Localization)
     FString LocaleCode;
-
     /**
     * Default locale at startup. Only one locale should be marked as default.
     */
     UPROPERTY(config, EditAnywhere, Category = Localization)
-    bool bDefault = false;
+    bool bDefault;
+    FFMODProjectLocale()
+        : bDefault(false)
+    {}
 };
 
 UCLASS(config = Engine, defaultconfig)
@@ -243,7 +232,7 @@ public:
     /**
     * Enable live update in Editor for Auditioning. *Requires Restart*
     */
-    UPROPERTY(Config, EditAnywhere, Category = Basic)
+    UPROPERTY(Config, EditAnywhere, Category = Basic, meta = (ConfigRestartRequired = true))
     bool bEnableEditorLiveUpdate;
 
     /**
@@ -269,13 +258,7 @@ public:
     TArray<FFMODProjectLocale> Locales;
 
     /**
-     * Whether to enable vol0virtual, which means voices with low volume will automatically go virtual to save CPU.
-     */
-    UPROPERTY(config, EditAnywhere, Category = InitSettings)
-    bool bVol0Virtual;
-
-    /**
-     * If vol0virtual is enabled, the signal level at which to make channels virtual.
+     * The signal level at which channels are virtualized. Virtual channels are processed, but do not produce any output.
      */
     UPROPERTY(config, EditAnywhere, Category = InitSettings)
     float Vol0VirtualLevel;
@@ -359,7 +342,7 @@ public:
     /**
     * Live update port to use while in editor for auditioning. *Requires Restart*
     */
-    UPROPERTY(config, EditAnywhere, Category = Advanced, meta = (EditCondition = "bEnableEditorLiveUpdate"))
+    UPROPERTY(config, EditAnywhere, Category = Advanced, meta = (EditCondition = "bEnableEditorLiveUpdate", ConfigRestartRequired = true))
     int32 EditorLiveUpdatePort;
 
     /**
@@ -450,6 +433,12 @@ public:
     UPROPERTY(config, EditAnywhere, Category = Advanced)
     FString AmbientLPFParameter;
 
+    /**
+    * Enables/Disables the FMODAudioLink modules.
+    */
+    UPROPERTY(config, EditAnywhere, Category = Advanced, meta = (ConfigRestartRequired=true))
+    bool bFMODAudioLinkEnabled;
+
     /*
     * Used to specify platform specific settings.
     */
@@ -516,5 +505,7 @@ private:
     };
 
     EProblem Check() const;
+
+    virtual void PostEditChangeProperty(FPropertyChangedEvent& e) override;
 #endif // WITH_EDITOR
 };

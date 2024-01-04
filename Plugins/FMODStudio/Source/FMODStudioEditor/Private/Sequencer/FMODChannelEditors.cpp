@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2022.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
 
 #include "Sequencer/FMODChannelEditors.h"
 #include "ISequencerChannelInterface.h"
@@ -151,9 +151,9 @@ void DrawKeys(FFMODEventControlChannel *Channel, TArrayView<const FKeyHandle> In
     static const FName KeyRightBrushName("Sequencer.KeyRight");
     static const FName KeyDiamondBrushName("Sequencer.KeyDiamond");
 
-    const FSlateBrush *LeftKeyBrush = FEditorStyle::GetBrush(KeyLeftBrushName);
-    const FSlateBrush *RightKeyBrush = FEditorStyle::GetBrush(KeyRightBrushName);
-    const FSlateBrush *DiamondBrush = FEditorStyle::GetBrush(KeyDiamondBrushName);
+    const FSlateBrush *LeftKeyBrush = FAppStyle::GetBrush(KeyLeftBrushName);
+    const FSlateBrush *RightKeyBrush = FAppStyle::GetBrush(KeyRightBrushName);
+    const FSlateBrush *DiamondBrush = FAppStyle::GetBrush(KeyDiamondBrushName);
 
     TMovieSceneChannelData<uint8> ChannelData = Channel->GetData();
 

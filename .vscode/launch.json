@@ -8,7 +8,7 @@
 			"preLaunchTask": "WeGotCompagnie Mac Debug Build",
 			"args": [
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_5.0",
+			"cwd": "/Users/Shared/Epic Games/UE_5.2",
 			"type": "lldb"
 		},
 		{
@@ -18,7 +18,7 @@
 			"preLaunchTask": "WeGotCompagnie Mac DebugGame Build",
 			"args": [
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_5.0",
+			"cwd": "/Users/Shared/Epic Games/UE_5.2",
 			"type": "lldb"
 		},
 		{
@@ -28,7 +28,7 @@
 			"preLaunchTask": "WeGotCompagnie Mac Development Build",
 			"args": [
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_5.0",
+			"cwd": "/Users/Shared/Epic Games/UE_5.2",
 			"type": "lldb"
 		},
 		{
@@ -38,7 +38,7 @@
 			"preLaunchTask": "WeGotCompagnie Mac Test Build",
 			"args": [
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_5.0",
+			"cwd": "/Users/Shared/Epic Games/UE_5.2",
 			"type": "lldb"
 		},
 		{
@@ -48,47 +48,47 @@
 			"preLaunchTask": "WeGotCompagnie Mac Shipping Build",
 			"args": [
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_5.0",
+			"cwd": "/Users/Shared/Epic Games/UE_5.2",
 			"type": "lldb"
 		},
 		{
 			"name": "Launch WeGotCompagnieEditor (Debug)",
 			"request": "launch",
-			"program": "/Users/Shared/Epic Games/UE_5.0/Engine/Binaries/Mac/UnrealEditor-Mac-Debug.app/Contents/MacOS/UnrealEditor-Mac-Debug",
+			"program": "/Users/Shared/Epic Games/UE_5.2/Engine/Binaries/Mac/UnrealEditor-Mac-Debug.app/Contents/MacOS/UnrealEditor-Mac-Debug",
 			"preLaunchTask": "WeGotCompagnieEditor Mac Debug Build",
 			"args": [
 				"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject"
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_5.0",
+			"cwd": "/Users/Shared/Epic Games/UE_5.2",
 			"type": "lldb"
 		},
 		{
 			"name": "Launch WeGotCompagnieEditor (DebugGame)",
 			"request": "launch",
-			"program": "/Users/Shared/Epic Games/UE_5.0/Engine/Binaries/Mac/UnrealEditor-Mac-DebugGame.app/Contents/MacOS/UnrealEditor-Mac-DebugGame",
+			"program": "/Users/Shared/Epic Games/UE_5.2/Engine/Binaries/Mac/UnrealEditor-Mac-DebugGame.app/Contents/MacOS/UnrealEditor-Mac-DebugGame",
 			"preLaunchTask": "WeGotCompagnieEditor Mac DebugGame Build",
 			"args": [
 				"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject"
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_5.0",
+			"cwd": "/Users/Shared/Epic Games/UE_5.2",
 			"type": "lldb"
 		},
 		{
 			"name": "Launch WeGotCompagnieEditor (Development)",
 			"request": "launch",
-			"program": "/Users/Shared/Epic Games/UE_5.0/Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor",
+			"program": "/Users/Shared/Epic Games/UE_5.2/Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor",
 			"preLaunchTask": "WeGotCompagnieEditor Mac Development Build",
 			"args": [
 				"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject"
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_5.0",
+			"cwd": "/Users/Shared/Epic Games/UE_5.2",
 			"type": "lldb"
 		},
 		{
 			"name": "Generate Project Files",
 			"type": "coreclr",
 			"request": "launch",
-			"program": "/Users/Shared/Epic Games/UE_5.0/Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool",
+			"program": "/Users/Shared/Epic Games/UE_5.2/Engine/Build/BatchFiles/RunUBT.bat",
 			"args": [
 				"-projectfiles",
 				"-vscode",
@@ -99,7 +99,7 @@
 			"console": "internalConsole",
 			"internalConsoleOptions": "openOnSessionStart",
 			"stopAtEntry": false,
-			"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			"cwd": "/Users/Shared/Epic Games/UE_5.2"
 		}
 	]
 }

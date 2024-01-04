@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2022.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
 
 #include "AssetTypeActions_FMODEvent.h"
 #include "AssetTypeActions_Base.h"
@@ -40,12 +40,12 @@ void FAssetTypeActions_FMODEvent::GetActions(const TArray<UObject *> &InObjects,
     auto Events = GetTypedWeakObjectPtrs<UFMODEvent>(InObjects);
 
     MenuBuilder.AddMenuEntry(LOCTEXT("FMODEvent_Play", "Play"), LOCTEXT("FMODEvent_PlayTooltip", "Plays the selected FMOD event."),
-        FSlateIcon(FEditorStyle::GetStyleSetName(), "MediaAsset.AssetActions.Play"),
+        FSlateIcon(FAppStyle::GetAppStyleSetName(), "MediaAsset.AssetActions.Play"),
         FUIAction(FExecuteAction::CreateSP(this, &FAssetTypeActions_FMODEvent::ExecutePlay, Events),
             FCanExecuteAction::CreateSP(this, &FAssetTypeActions_FMODEvent::CanExecutePlayCommand, Events)));
 
     MenuBuilder.AddMenuEntry(LOCTEXT("FMODEvent_Stop", "Stop"), LOCTEXT("FMODEvent_StopTooltip", "Stops the currently playing FMOD event."),
-        FSlateIcon(FEditorStyle::GetStyleSetName(), "MediaAsset.AssetActions.Stop"),
+        FSlateIcon(FAppStyle::GetAppStyleSetName(), "MediaAsset.AssetActions.Stop"),
         FUIAction(FExecuteAction::CreateSP(this, &FAssetTypeActions_FMODEvent::ExecuteStop, Events), FCanExecuteAction()));
 }
 

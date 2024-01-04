@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2022.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
 
 #include "SFMODEventEditorPanel.h"
 #include "FMODStudioModule.h"
@@ -76,7 +76,7 @@ TSharedRef<SBorder> SFMODEventEditorPanel::ConstructToolbar(FMOD::Studio::EventD
     }
 
     return SNew(SBorder)
-        .BorderImage(FEditorStyle::Get().GetBrush("ToolPanel.GroupBorder"))
+        .BorderImage(FAppStyle::Get().GetBrush("ToolPanel.GroupBorder"))
         .Padding(6.0f)
         .Content()[SNew(SHorizontalBox) +
                    SHorizontalBox::Slot()

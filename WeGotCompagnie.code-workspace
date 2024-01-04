@@ -6,14 +6,11 @@
 		},
 		{
 			"name": "UE5",
-			"path": "/Users/Shared/Epic Games/UE_5.0"
+			"path": "/Users/Shared/Epic Games/UE_5.2"
 		}
 	],
 	"settings": {
-		"typescript.tsc.autoDetect": "off",
-		"C_Cpp.intelliSenseEngineFallback": "Enabled",
-		"C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
-		"UEIntellisenseFixes.cppStandard": "c++17"
+		"typescript.tsc.autoDetect": "off"
 	},
 	"extensions": {
 		"recommendations": [

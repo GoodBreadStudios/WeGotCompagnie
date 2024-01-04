@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2022.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
 
 #pragma once
 
@@ -71,11 +71,6 @@ public:
 	 * Set system paused (for PIE pause)
 	 */
     virtual void SetSystemPaused(bool paused) = 0;
-
-    /**
-	 * Called when user changes any studio settings
-	 */
-    virtual void RefreshSettings() = 0;
 
     /**
 	 * Called when we enter of leave PIE mode
@@ -163,12 +158,21 @@ public:
     /** Set active locale. Locale must be the locale name of one of the configured project locales */
     virtual bool SetLocale(const FString& Locale) = 0;
 
-    /** Get ative locale. */
+    /** Get active locale. */
     virtual FString GetLocale() = 0;
+
+    /** Get default locale. */
+    virtual FString GetDefaultLocale() = 0;
 
 
 #if WITH_EDITOR
     /** Called by the editor module when banks have been modified on disk */
     virtual void ReloadBanks() = 0;
+
+    /** Load Editor banks for auditioning in Sequnecer. */
+    virtual void LoadEditorBanks() = 0;
+
+    /** Unload Editor banks. */
+    virtual void UnloadEditorBanks() = 0;
 #endif
 };

@@ -15,7 +15,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -35,7 +35,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -53,7 +53,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -70,7 +70,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -90,7 +90,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -108,7 +108,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -125,7 +125,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -145,7 +145,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -163,7 +163,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -180,7 +180,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -200,7 +200,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -218,7 +218,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -235,7 +235,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -255,7 +255,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -273,7 +273,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -290,7 +290,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -310,7 +310,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -328,7 +328,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -345,7 +345,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -365,7 +365,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -383,7 +383,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -400,7 +400,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -420,7 +420,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -438,7 +438,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -455,7 +455,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -475,7 +475,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -493,7 +493,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -510,7 +510,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -530,7 +530,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -548,7 +548,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -565,7 +565,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -585,7 +585,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -603,7 +603,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -620,7 +620,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -640,7 +640,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -658,7 +658,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -675,7 +675,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -695,7 +695,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		},
 		{
@@ -713,7 +713,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+				"cwd": "/Users/Shared/Epic Games/UE_5.2"
 			}
 		}
 	]
