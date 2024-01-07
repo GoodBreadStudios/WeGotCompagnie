@@ -7,7 +7,7 @@
 #include "HelperMacros.h"
 #include "Components/BillboardComponent.h"
 #include "Components/WidgetComponent.h"
-#include "CommonUI/Public/CommonActivatableWidget.h"
+#include "CommonActivatableWidget.h"
 #include "WeGotCompagnieCharacter.generated.h"
 
 
