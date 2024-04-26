@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2024.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
 
 #pragma once
 
@@ -15,8 +15,7 @@ UENUM()
 enum class EFMODEventControlKey : uint8
 {
     Stop = 0,
-    Play = 1,
-    Pause = 2
+    Play = 1
 };
 
 USTRUCT()

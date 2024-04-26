@@ -18,7 +18,6 @@
 <li><a href="blueprint-reference.html">Blueprint Reference</a></li>
 <li><a href="platform-specifics.html">Platform Specifics</a></li>
 <li><a href="troubleshooting.html">Troubleshooting</a></li>
-<li><a href="audiolink.html">AudioLink</a></li>
 <li><a href="glossary.html">Glossary</a></li>
 </ul>
 </div>
@@ -36,16 +35,6 @@
 <ul>
 <li><span><a class="apilink" href="api-reference-ufmodanimnotifyplay.html#ufmodanimnotifyplay_notify" title="Event triggered when the timeline crosses the notify marker.">UFMODAnimNotifyPlay::Notify</a> Event triggered when the timeline crosses the notify marker.</span></li>
 </ul>
-<h2 api="struct" id="ufmodanimnotifyplay_attachname"><a href="#ufmodanimnotifyplay_attachname">UFMODAnimNotifyPlay::AttachName</a></h2>
-<p>Socket or bone name to attach sound to.</p>
-<p>
-<div class="language-selector">
-<div class="language-tab" data-language="language-cpp">C++</div>
-</div>
-</p>
-<div class="highlight language-cpp"><pre><span></span><span class="n">FString</span> <span class="n">AttachName</span><span class="p">;</span>
-</pre></div>
-
 <h2 api="struct" id="ufmodanimnotifyplay_bfollow"><a href="#ufmodanimnotifyplay_bfollow">UFMODAnimNotifyPlay::bFollow</a></h2>
 <p>Should this sound follow its owner.</p>
 <p>
@@ -67,6 +56,16 @@
 </pre></div>
 
 <p><strong>See Also:</strong> <a class="apilink" href="api-reference-ufmodevent.html">UFMODEvent</a></p>
+<h2 api="struct" id="ufmodanimnotifyplay_attachname"><a href="#ufmodanimnotifyplay_attachname">UFMODAnimNotifyPlay::AttachName</a></h2>
+<p>Socket or bone name to attach sound to.</p>
+<p>
+<div class="language-selector">
+<div class="language-tab" data-language="language-cpp">C++</div>
+</div>
+</p>
+<div class="highlight language-cpp"><pre><span></span><span class="n">FString</span> <span class="n">AttachName</span><span class="p">;</span>
+</pre></div>
+
 <h2 api="function" id="ufmodanimnotifyplay_notify"><a href="#ufmodanimnotifyplay_notify">UFMODAnimNotifyPlay::Notify</a></h2>
 <p>Event triggered when the timeline crosses the notify marker.</p>
 <p>
@@ -86,7 +85,7 @@
 <p>If <a class="apilink" href="api-reference-ufmodanimnotifyplay.html#ufmodanimnotifyplay_bfollow">UFMODAnimNotifyPlay::bFollow</a> is true <a class="apilink" href="blueprint-reference-common.html#play-event-attached">Play Event Attached</a> is called using the current <a class="apilink" href="api-reference-ufmodanimnotifyplay.html#ufmodanimnotifyplay_attachname">UFMODAnimNotifyPlay::AttachName</a>.<br />
 Otherwise <a class="apilink" href="blueprint-reference-common.html#play-event-at-location">Play Event At Location</a> is called using the <code>MeshComp</code> for the positional information.</p></div>
 
-<p class="manual-footer">Unreal Integration 2.02.21 (2024-03-10). &copy; 2024 Firelight Technologies Pty Ltd.</p>
+<p class="manual-footer">Unreal Integration 2.02.19 (2023-11-02). &copy; 2023 Firelight Technologies Pty Ltd.</p>
 </body>
 </html>
 

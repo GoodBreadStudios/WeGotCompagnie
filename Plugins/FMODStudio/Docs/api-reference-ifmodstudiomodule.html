@@ -18,7 +18,6 @@
 <li><a href="blueprint-reference.html">Blueprint Reference</a></li>
 <li><a href="platform-specifics.html">Platform Specifics</a></li>
 <li><a href="troubleshooting.html">Troubleshooting</a></li>
-<li><a href="audiolink.html">AudioLink</a></li>
 <li><a href="glossary.html">Glossary</a></li>
 </ul>
 </div>
@@ -55,8 +54,6 @@
 <li><span><a class="apilink" href="api-reference-ifmodstudiomodule.html#ifmodstudiomodule_loadplugin" title="Attempts to load a plugin by name.">IFMODStudioModule::LoadPlugin</a> Attempts to load a plugin by name.</span></li>
 <li><span><a class="apilink" href="api-reference-ifmodstudiomodule.html#ifmodstudiomodule_logerror" title="Log an FMOD error.">IFMODStudioModule::LogError</a> Log an FMOD error.</span></li>
 <li><span><a class="apilink" href="api-reference-ifmodstudiomodule.html#ifmodstudioeditormodule_arebanksloaded" title="This returns true if the plugin has loaded all required banks on startup. Depending if bLoadAllBanks is checked, this could be all banks or just the Master and Strings Bank.">IFMODStudioEditorModule::AreBanksLoaded</a> This returns true if the plugin has loaded all required banks on startup. Depending if <a href="api-reference-ufmodsettings#bloadallbanks.html">bLoadAllBanks</a> is checked, this could be all banks or just the <a href="studio-guide#loading-banks.html">Master</a> and <a href="studio-guide#loading-banks.html">Strings Bank</a>.</span></li>
-<li><span><a class="apilink" href="api-reference-ifmodstudiomodule.html#ifmodstudiomodule_preendpieevent" title="Returns a delegate that gets triggered as the Play-In-Editor session is stopped but before the FMOD System is shutdown.">IFMODStudioModule::PreEndPIEEvent</a> Returns a delegate that gets triggered as the Play-In-Editor session is stopped but before the FMOD System is shutdown.</span></li>
-<li><span><a class="apilink" href="api-reference-ifmodstudiomodule.html#ifmodstudiomodule_preendpiedelegate" title="Delegate that gets triggered as the Play-In-Editor session is stopped but before the FMOD System is shutdown.">IFMODStudioModule::PreEndPIEDelegate</a> Delegate that gets triggered as the Play-In-Editor session is stopped but before the FMOD System is shutdown.</span></li>
 </ul>
 <h2 api="method" id="ifmodstudiomodule_get"><a href="#ifmodstudiomodule_get">IFMODStudioModule::Get</a></h2>
 <p>Singleton-like access to this module's interface. Beware of calling this during the shutdown phase, though. Your module might have been unloaded already.</p>
@@ -339,19 +336,9 @@
 <h2 api="method" id="ifmodstudioeditormodule_arebanksloaded"><a href="#ifmodstudioeditormodule_arebanksloaded">IFMODStudioEditorModule::AreBanksLoaded</a></h2>
 <p>This returns true if the plugin has loaded all required banks on startup. Depending if <a href="api-reference-ufmodsettings#bloadallbanks.html">bLoadAllBanks</a> is checked, this could be all banks or just the <a href="studio-guide#loading-banks.html">Master</a> and <a href="studio-guide#loading-banks.html">Strings Bank</a>.</p>
 <div class="highlight language-cpp"><pre><span></span><span class="kt">bool</span> <span class="nf">AreBanksLoaded</span><span class="p">();</span>
-</pre></div>
-
-<h2 api="function" id="ifmodstudiomodule_preendpieevent"><a href="#ifmodstudiomodule_preendpieevent">IFMODStudioModule::PreEndPIEEvent</a></h2>
-<p>Returns a delegate that gets triggered as the Play-In-Editor session is stopped but before the FMOD System is shutdown.</p>
-<div class="highlight language-cpp"><pre><span></span><span class="n">FSimpleMulticastDelegate</span> <span class="o">&amp;</span><span class="n">PreEndPIEEvent</span><span class="p">()</span>
-</pre></div>
-
-<h2 api="delegate" id="ifmodstudiomodule_preendpiedelegate"><a href="#ifmodstudiomodule_preendpiedelegate">IFMODStudioModule::PreEndPIEDelegate</a></h2>
-<p>Delegate that gets triggered as the Play-In-Editor session is stopped but before the FMOD System is shutdown.</p>
-<div class="highlight language-cpp"><pre><span></span><span class="n">FSimpleMulticastDelegate</span> <span class="n">PreEndPIEDelegate</span>
 </pre></div></div>
 
-<p class="manual-footer">Unreal Integration 2.02.21 (2024-03-10). &copy; 2024 Firelight Technologies Pty Ltd.</p>
+<p class="manual-footer">Unreal Integration 2.02.19 (2023-11-02). &copy; 2023 Firelight Technologies Pty Ltd.</p>
 </body>
 </html>
 

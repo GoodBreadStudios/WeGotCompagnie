@@ -241,11 +241,6 @@ ul.subchapters .manual-active-chapter > a { border-bottom: 2px solid black; }
     text-align: left;
 }
 
-.manual-content td img {
-    margin: initial;
-    box-shadow: initial;
-}
-
 .manual-content img + br + em {
     display: block;
     margin-left: 20px;

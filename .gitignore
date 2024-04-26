@@ -1,6 +1,5 @@
 # Visual Studio 2015 user specific files
 .vs/
-.vscode/*
 
 # Compiled Object files
 *.slo
@@ -51,7 +50,6 @@ SourceArt/**/*.tga
 # Binary Files
 Binaries/*
 # Plugins/*/Binaries/*
-Plugins/*/Binaries/*
 
 # Builds
 Build/*

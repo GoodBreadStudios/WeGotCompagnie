@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2024.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
 using UnrealBuildTool;
 using System;
 using System.IO;
@@ -229,9 +229,6 @@ namespace UnrealBuildTool.Rules
                     }
                 }
             }
-
-            FMODAudioLink.Apply(this, Target);
-            FMODAudioLinkEditor.Apply(this, Target);
         }
 
         private System.Collections.Generic.List<string> GetPlugins(string BasePath)
@@ -257,19 +254,6 @@ namespace UnrealBuildTool.Rules
                 }
             }
             return AllPlugins;
-        }
-
-        public void AddModule(string Module, bool AddPublic = true)
-        {
-            ConditionalAddModuleDirectory(
-                EpicGames.Core.DirectoryReference.Combine(new EpicGames.Core.DirectoryReference(ModuleDirectory), "..", Module));
-
-            ExternalDependencies.Add(Path.Combine(ModuleDirectory, "..", Module, Module + ".Build.cs"));
-            if (AddPublic)
-            {
-                PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "..", Module, "Public"));
-            }
-            PrivateIncludePaths.Add(Path.Combine(ModuleDirectory, "..", Module, "Private"));
         }
     }
 }
