@@ -18,6 +18,7 @@
 <li><a href="blueprint-reference.html">Blueprint Reference</a></li>
 <li><a href="platform-specifics.html">Platform Specifics</a></li>
 <li><a href="troubleshooting.html">Troubleshooting</a></li>
+<li><a href="audiolink.html">AudioLink</a></li>
 <li><a href="glossary.html">Glossary</a></li>
 </ul>
 </div>
@@ -30,22 +31,6 @@
 <li><span><a class="apilink" href="api-reference-ufmodblueprintstatics.html#ffmodeventinstance" title="Wrapped FMOD::Studio::EventInstance for use in blueprints.">FFMODEventInstance</a> Wrapped FMOD::Studio::EventInstance for use in blueprints.</span></li>
 <li><span><a class="apilink" href="api-reference-ufmodblueprintstatics.html#efmod_studio_stop_mode" title="Studio stop mode enum for use in blueprints.">EFMOD_STUDIO_STOP_MODE</a> Studio stop mode enum for use in blueprints.</span></li>
 </ul>
-<h2 api="struct" id="ffmodeventinstance"><a href="#ffmodeventinstance">FFMODEventInstance</a></h2>
-<p>Wrapped FMOD::Studio::EventInstance for use in blueprints.</p>
-<p>
-<div class="language-selector">
-<div class="language-tab" data-language="language-cpp">C++</div>
-</div>
-</p>
-<div class="highlight language-cpp"><pre><span></span><span class="k">struct</span> <span class="n">FFMODEventInstance</span><span class="p">{</span>
-  <span class="n">FMOD</span><span class="o">::</span><span class="n">Studio</span><span class="o">::</span><span class="n">EventInstance</span> <span class="o">*</span><span class="n">Instance</span><span class="p">;</span>
-<span class="p">}</span> <span class="n">FFMODEventInstance</span><span class="p">;</span>
-</pre></div>
-
-<dl>
-<dt id="ffmodeventinstance_instance">Instance</dt>
-<dd><a href="https://fmod.com/docs/2.02/api/studio-api-eventinstance.html">FMOD::Studio::EventInstance</a> to use.</dd>
-</dl>
 <h2 api="struct" id="efmod_studio_stop_mode"><a href="#efmod_studio_stop_mode">EFMOD_STUDIO_STOP_MODE</a></h2>
 <p>Studio stop mode enum for use in blueprints.</p>
 <p>
@@ -65,9 +50,25 @@
 <dt id="efmod_studio_stop_mode_immediate">IMMEDIATE</dt>
 <dd>Stop the event instance immediately.</dd>
 </dl>
-<p><strong>See Also:</strong> <a href="https://fmod.com/docs/2.02/api/studio-api-eventinstance.html#fmod_studio_stop_mode">FMOD_STUDIO_STOP_MODE</a></p></div>
+<p><strong>See Also:</strong> <a href="https://fmod.com/docs/2.02/api/studio-api-eventinstance.html#fmod_studio_stop_mode">FMOD_STUDIO_STOP_MODE</a></p>
+<h2 api="struct" id="ffmodeventinstance"><a href="#ffmodeventinstance">FFMODEventInstance</a></h2>
+<p>Wrapped FMOD::Studio::EventInstance for use in blueprints.</p>
+<p>
+<div class="language-selector">
+<div class="language-tab" data-language="language-cpp">C++</div>
+</div>
+</p>
+<div class="highlight language-cpp"><pre><span></span><span class="k">struct</span> <span class="n">FFMODEventInstance</span><span class="p">{</span>
+  <span class="n">FMOD</span><span class="o">::</span><span class="n">Studio</span><span class="o">::</span><span class="n">EventInstance</span> <span class="o">*</span><span class="n">Instance</span><span class="p">;</span>
+<span class="p">}</span> <span class="n">FFMODEventInstance</span><span class="p">;</span>
+</pre></div>
 
-<p class="manual-footer">Unreal Integration 2.02.19 (2023-11-02). &copy; 2023 Firelight Technologies Pty Ltd.</p>
+<dl>
+<dt id="ffmodeventinstance_instance">Instance</dt>
+<dd><a href="https://fmod.com/docs/2.02/api/studio-api-eventinstance.html">FMOD::Studio::EventInstance</a> to use.</dd>
+</dl></div>
+
+<p class="manual-footer">Unreal Integration 2.02.21 (2024-03-10). &copy; 2024 Firelight Technologies Pty Ltd.</p>
 </body>
 </html>
 

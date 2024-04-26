@@ -15,9 +15,10 @@
 <li><a href="plugins.html">Plugins</a></li>
 <li><a href="niagara.html">Niagara Integration</a></li>
 <li><a href="api-reference.html">API Reference</a></li>
-<li class="manual-current-chapter manual-inactive-chapter"><a href="blueprint-reference.html">Blueprint Reference</a><ul class="subchapters"><li><a href="blueprint-reference-bus.html">Bus</a></li><li><a href="blueprint-reference-common.html">Common</a></li><li><a href="blueprint-reference-component.html">Component</a></li><li><a href="blueprint-reference-eventinstance.html">Event Instance</a></li><li><a href="blueprint-reference-asynchronous-loading.html">Asynchronous Loading</a></li><li class="manual-current-chapter manual-active-chapter"><a href="blueprint-reference-enums.html">Enums</a></li><li><a href="blueprint-reference-utilities.html">Utilities</a></li><li><a href="blueprint-reference-structs.html">Structs</a></li></ul></li>
+<li class="manual-current-chapter manual-inactive-chapter"><a href="blueprint-reference.html">Blueprint Reference</a><ul class="subchapters"><li><a href="blueprint-reference-bus.html">Bus</a></li><li><a href="blueprint-reference-common.html">Common</a></li><li><a href="blueprint-reference-component.html">Component</a></li><li><a href="blueprint-reference-eventinstance.html">Event Instance</a></li><li><a href="blueprint-reference-asynchronous-loading.html">Asynchronous Loading</a></li><li class="manual-current-chapter manual-active-chapter"><a href="blueprint-reference-enums.html">Enums</a></li><li><a href="blueprint-reference-structs.html">Structs</a></li><li><a href="blueprint-reference-utilities.html">Utilities</a></li></ul></li>
 <li><a href="platform-specifics.html">Platform Specifics</a></li>
 <li><a href="troubleshooting.html">Troubleshooting</a></li>
+<li><a href="audiolink.html">AudioLink</a></li>
 <li><a href="glossary.html">Glossary</a></li>
 </ul>
 </div>
@@ -49,18 +50,6 @@
 <dd>Byte to convert to an EFMOD_STUDIO_STOP_MODE.</dd>
 </dl>
 <p><strong>See Also:</strong> <a href="https://fmod.com/docs/2.02/api/studio-api-eventinstance.html#fmod_studio_stop_mode">EFMOD_STUDIO_STOP_MODE</a>.</p>
-<h2 api="function" id="get-number-of-entries-in-efmod_studio_stop_mode"><a href="#get-number-of-entries-in-efmod_studio_stop_mode">Get Number of Entries in EFMOD_STUDIO_STOP_MODE</a></h2>
-<p>Returns the total number of entries in the EFMOD_STUDIO_STOP_MODE enum.</p>
-<p><img alt="Get Number of Entries in EFMOD_STUDIO_STOP_MODE" src="images/get-number-of-entreis-in.png" /></p>
-<p>
-<div class="language-selector">
-<div class="language-tab" data-language="language-cpp">C++</div>
-</div>
-</p>
-<div class="highlight language-cpp"><pre><span></span><span class="kt">int</span> <span class="nf">GetNumberOfEntriesInEFMOD_STUDIO_STOP_MODE</span><span class="p">();</span>
-</pre></div>
-
-<p><strong>See Also:</strong> <a href="https://fmod.com/docs/2.02/api/studio-api-eventinstance.html#fmod_studio_stop_mode">EFMOD_STUDIO_STOP_MODE</a>.</p>
 <h2 api="function" id="foreach-efmod_studio_stop_mode"><a href="#foreach-efmod_studio_stop_mode">ForEach EFMOD_STUDIO_STOP_MODE</a></h2>
 <p>Returns every value in the EFMOD_STUDIO_STOP_MODE enum.</p>
 <p><img alt="ForEach EFMOD_STUDIO_STOP_MODE" src="images/for-each.png" /></p>
@@ -70,6 +59,18 @@
 </div>
 </p>
 <div class="highlight language-cpp"><pre><span></span><span class="n">EFMOD_STUDIO_STOP_MODE</span> <span class="nf">ForEachEFMOD_STUDIO_STOP_MODE</span><span class="p">();</span>
+</pre></div>
+
+<p><strong>See Also:</strong> <a href="https://fmod.com/docs/2.02/api/studio-api-eventinstance.html#fmod_studio_stop_mode">EFMOD_STUDIO_STOP_MODE</a>.</p>
+<h2 api="function" id="get-number-of-entries-in-efmod_studio_stop_mode"><a href="#get-number-of-entries-in-efmod_studio_stop_mode">Get Number of Entries in EFMOD_STUDIO_STOP_MODE</a></h2>
+<p>Returns the total number of entries in the EFMOD_STUDIO_STOP_MODE enum.</p>
+<p><img alt="Get Number of Entries in EFMOD_STUDIO_STOP_MODE" src="images/get-number-of-entreis-in.png" /></p>
+<p>
+<div class="language-selector">
+<div class="language-tab" data-language="language-cpp">C++</div>
+</div>
+</p>
+<div class="highlight language-cpp"><pre><span></span><span class="kt">int</span> <span class="nf">GetNumberOfEntriesInEFMOD_STUDIO_STOP_MODE</span><span class="p">();</span>
 </pre></div>
 
 <p><strong>See Also:</strong> <a href="https://fmod.com/docs/2.02/api/studio-api-eventinstance.html#fmod_studio_stop_mode">EFMOD_STUDIO_STOP_MODE</a>.</p>
@@ -92,7 +93,7 @@
 </dl>
 <p><strong>See Also:</strong> <a href="https://fmod.com/docs/2.02/api/studio-api-eventinstance.html#fmod_studio_stop_mode">EFMOD_STUDIO_STOP_MODE</a>.</p></div>
 
-<p class="manual-footer">Unreal Integration 2.02.19 (2023-11-02). &copy; 2023 Firelight Technologies Pty Ltd.</p>
+<p class="manual-footer">Unreal Integration 2.02.21 (2024-03-10). &copy; 2024 Firelight Technologies Pty Ltd.</p>
 </body>
 </html>
 

@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2024.
 
 #include "FMODStudioModule.h"
 #include "FMODSettings.h"
@@ -10,6 +10,11 @@
 #include "FMODEvent.h"
 #include "FMODListener.h"
 #include "FMODSnapshotReverb.h"
+
+#include "FMODAudioLinkModule.h"
+#if WITH_EDITOR
+#include "FMODAudioLinkEditorModule.h"
+#endif
 
 #include "Async/Async.h"
 #include "Interfaces/IPluginManager.h"
@@ -122,13 +127,12 @@ public:
     FFMODStudioSystemClockSink(FMOD::Studio::System *SystemIn)
         : System(SystemIn)
         , LastResult(FMOD_OK)
-        , Paused(false)
     {
     }
 
     virtual void TickRender(FTimespan DeltaTime, FTimespan Timecode) override
     {
-        if (System && !Paused)
+        if (System)
         {
             if (UpdateListenerPosition.IsBound())
             {
@@ -143,18 +147,17 @@ public:
 
     void OnDestroyStudioSystem() { System = nullptr; }
 
-    void SetPaused(bool PausedIn) { Paused = PausedIn; }
-
     FMOD::Studio::System *System;
     FMOD_RESULT LastResult;
     FUpdateListenerPosition UpdateListenerPosition;
-
-private:
-    bool Paused;
 };
 
 class FFMODStudioModule : public IFMODStudioModule
 {
+    TUniquePtr<FFMODAudioLinkModule> FMODAudioLinkModule;
+#if WITH_EDITOR
+    TUniquePtr<FFMODAudioLinkEditorModule> FMODAudioLinkEditorModule;
+#endif
 public:
     /** IModuleInterface implementation */
     FFMODStudioModule()
@@ -203,7 +206,12 @@ public:
     void UnloadBanks(EFMODSystemContext::Type Type);
 
 #if WITH_EDITOR
+    FSimpleMulticastDelegate PreEndPIEDelegate;
+    FSimpleMulticastDelegate &PreEndPIEEvent() override { return PreEndPIEDelegate; };
+    virtual void PreEndPIE() override;
     void ReloadBanks();
+    void LoadEditorBanks();
+    void UnloadEditorBanks();
 #endif
 
     void CreateStudioSystem(EFMODSystemContext::Type Type);
@@ -514,6 +522,18 @@ void FFMODStudioModule::StartupModule()
         {
             SetInPIE(true, false);
         }
+
+        // Load AudioLink module
+        bool bFMODAudioLinkEnabled = Settings.bFMODAudioLinkEnabled;
+        if (bFMODAudioLinkEnabled)
+        {
+            UE_LOG(LogFMOD, Log, TEXT("FFMODAudioLinkModule startup"));
+            FMODAudioLinkModule = MakeUnique<FFMODAudioLinkModule>();
+#if WITH_EDITOR
+            UE_LOG(LogFMOD, Log, TEXT("FFMODAudioLinkEditorModule startup"));
+            FMODAudioLinkEditorModule = MakeUnique<FFMODAudioLinkEditorModule>();
+#endif
+        }
     }
 
     OnTick = FTickerDelegate::CreateRaw(this, &FFMODStudioModule::Tick);
@@ -685,11 +705,7 @@ void FFMODStudioModule::CreateStudioSystem(EFMODSystemContext::Type Type)
 
     FMOD_ADVANCEDSETTINGS advSettings = { 0 };
     advSettings.cbSize = sizeof(FMOD_ADVANCEDSETTINGS);
-    if (Settings.bVol0Virtual)
-    {
-        advSettings.vol0virtualvol = Settings.Vol0VirtualLevel;
-        InitFlags |= FMOD_INIT_VOL0_BECOMES_VIRTUAL;
-    }
+    advSettings.vol0virtualvol = Settings.Vol0VirtualLevel;
 
     if (!Settings.SetCodecs(advSettings))
     {
@@ -1200,8 +1216,6 @@ void FFMODStudioModule::SetSystemPaused(bool paused)
             verifyfmod(LowLevelSystem->getMasterChannelGroup(&MasterChannelGroup));
             verifyfmod(MasterChannelGroup->setPaused(paused));
 
-            ClockSinks[EFMODSystemContext::Runtime]->SetPaused(paused);
-
             if (paused)
             {
                 LowLevelSystem->mixerSuspend();
@@ -1210,6 +1224,17 @@ void FFMODStudioModule::SetSystemPaused(bool paused)
     }
 }
 
+#if WITH_EDITOR
+void FFMODStudioModule::PreEndPIE()
+{
+    UE_LOG(LogFMOD, Verbose, TEXT("PreEndPIE"));
+    if (PreEndPIEDelegate.IsBound())
+    {
+        PreEndPIEDelegate.Broadcast();
+    }
+}
+#endif
+
 void FFMODStudioModule::ShutdownModule()
 {
     UE_LOG(LogFMOD, Verbose, TEXT("FFMODStudioModule shutdown"));
@@ -1217,6 +1242,17 @@ void FFMODStudioModule::ShutdownModule()
     DestroyStudioSystem(EFMODSystemContext::Auditioning);
     DestroyStudioSystem(EFMODSystemContext::Runtime);
     DestroyStudioSystem(EFMODSystemContext::Editor);
+
+    if (FMODAudioLinkModule)
+    {
+        FMODAudioLinkModule.Reset();
+    }
+#if WITH_EDITOR
+    if (FMODAudioLinkEditorModule)
+    {
+        FMODAudioLinkEditorModule.Reset();
+    }
+#endif
 
     if (StudioLibHandle && LowLevelLibHandle)
     {
@@ -1471,6 +1507,16 @@ void FFMODStudioModule::ReloadBanks()
     LoadBanks(EFMODSystemContext::Auditioning);
     CreateStudioSystem(EFMODSystemContext::Editor);
 }
+
+void FFMODStudioModule::LoadEditorBanks()
+{
+    LoadBanks(EFMODSystemContext::Editor);
+}
+
+void FFMODStudioModule::UnloadEditorBanks()
+{
+    UnloadBanks(EFMODSystemContext::Editor);
+}
 #endif
 
 FMOD::Studio::System *FFMODStudioModule::GetStudioSystem(EFMODSystemContext::Type Context)
@@ -1536,15 +1582,26 @@ void FFMODStudioModule::InitializeAudioSession()
         {
             case AVAudioSessionInterruptionTypeBegan:
             {
-                if (@available(iOS 10.3, *))
+                // Starting in iOS 10, if the system suspended the app process and deactivated the audio session
+                // then we get a delayed interruption notification when the app is re-activated. Just ignore that here.
+                if (@available(iOS 14.5, *))
                 {
-                    if ([[notification.userInfo valueForKey:AVAudioSessionInterruptionWasSuspendedKey] boolValue])
+                    if ([[notification.userInfo valueForKey:AVAudioSessionInterruptionReasonKey] intValue] == AVAudioSessionInterruptionReasonAppWasSuspended)
                     {
-                        // If the system suspended the app process and deactivated the audio session then we get a delayed
-                        // interruption notification when the app is re-activated. Just ignore that here.
                         return;
                     }
                 }
+                else if (@available(iOS 10.3, *))
+                {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+                    if ([[notification.userInfo valueForKey:AVAudioSessionInterruptionWasSuspendedKey] boolValue])
+                    {
+                        return;
+                    }
+#pragma clang diagnostic pop
+                }
+
                 SetSystemPaused(true);
                 break;
             }

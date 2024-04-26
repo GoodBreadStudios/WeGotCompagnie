@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2023.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2024.
 
 #pragma once
 
@@ -164,9 +164,19 @@ public:
     /** Get default locale. */
     virtual FString GetDefaultLocale() = 0;
 
-
 #if WITH_EDITOR
+    /** Multicast delegate that is triggered before the module is shutdown. */
+    virtual FSimpleMulticastDelegate &PreEndPIEEvent() = 0;
+
+    virtual void PreEndPIE() = 0;
+
     /** Called by the editor module when banks have been modified on disk */
     virtual void ReloadBanks() = 0;
+
+    /** Load Editor banks for auditioning in Sequnecer. */
+    virtual void LoadEditorBanks() = 0;
+
+    /** Unload Editor banks. */
+    virtual void UnloadEditorBanks() = 0;
 #endif
 };
