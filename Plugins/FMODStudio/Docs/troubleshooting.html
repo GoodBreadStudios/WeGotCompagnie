@@ -29,8 +29,10 @@
 <li><a href="#additional-logging">Additional Logging</a></li>
 <li><a href="#blueprint-only-projects">Blueprint only projects</a></li>
 <li><a href="#audio-not-muted-when-game-loses-focus">Audio not muted when game loses focus</a></li>
+<li><a href="#endplay-with-play-in-editor">EndPlay with Play-In-Editor</a></li>
 </ul>
 </li>
+<li><a href="audiolink.html">AudioLink</a></li>
 <li><a href="glossary.html">Glossary</a></li>
 </ul>
 </div>
@@ -86,9 +88,42 @@ This is mentioned by Epic on their forum: <a href="https://answers.unrealengine.
     <span class="p">}</span>
 <span class="cp">#endif</span>
 <span class="p">}</span>
+</pre></div>
+
+<h2 id="endplay-with-play-in-editor"><a href="#endplay-with-play-in-editor">9.9 EndPlay with Play-In-Editor</a></h2>
+<p>Normally cleaning up in <code>EndPlay()</code> is valid and safe to do for your game, but during Play-In-Editor <code>EndPlay</code> doesn't get triggered until after the FMODStudio Module has already been shutdown. This isn't such an issue with <a href="https://fmod.com/docs/2.02/api/studio-api.html">Studio API</a>, as when the System gets released it cleans up all of it's managed handles. The issue is when using the <a href="https://fmod.com/docs/2.02/api/core-api.html">Core API</a> because you need to manage it's objects yourself.</p>
+<p>We have a delegate that you can hook into, which will fire off a function before the FMOD System has been shutdown. You can access the delegate using <a href=""><code>IFMODStudioModule::Get().PreEndPIEEvent()</code></a>.</p>
+<p>Eg.</p>
+<div class="highlight language-text"><pre><span></span>void AMyActor::BeginPlay()
+{
+#if WITH_EDITOR
+    IFMODStudioModule::Get().PreEndPIEEvent().AddUObject(this, &amp;AMyActor::ShutdownFunction);
+#endif
+}
+
+void AMyActor::EndPlay()
+{
+#if WITH_EDITOR
+    IFMODStudioModule::Get().PreEndPIEEvent().RemoveAll(this);
+#else
+    ShutdownFunction();
+#endif
+}
+
+void AMyActor::ShutdownFunction()
+{
+    if (channel)
+    {
+        channel-&gt;stop();
+    }
+    if (sound)
+    {
+        sound-&gt;release();
+    }
+}
 </pre></div></div>
 
-<p class="manual-footer">Unreal Integration 2.02.19 (2023-11-02). &copy; 2023 Firelight Technologies Pty Ltd.</p>
+<p class="manual-footer">Unreal Integration 2.02.21 (2024-03-10). &copy; 2024 Firelight Technologies Pty Ltd.</p>
 </body>
 </html>
 
