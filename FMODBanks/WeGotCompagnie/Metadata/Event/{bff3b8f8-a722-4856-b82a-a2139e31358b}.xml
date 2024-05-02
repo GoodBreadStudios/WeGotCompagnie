@@ -72,6 +72,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{df244e85-6565-4357-b397-77a36a802705}">
+		<property name="volume">
+			<value>-8</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{2d129eb6-90f8-4d36-b482-0aee03fc21c8}</destination>
 		</relationship>
@@ -83,8 +86,12 @@
 		</relationship>
 	</object>
 	<object class="MultiSound" id="{1df9eafb-281e-4e71-96dd-60e49f9a7bdd}">
+		<property name="playbackMode">
+			<value>1</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{7abe1e29-9f79-4b9e-9e2a-3860cd271129}</destination>
+			<destination>{bc71f7bd-ec02-4057-94ce-f4967ced9555}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{eff7affb-48ad-4dd7-8254-e489b97353e9}">
@@ -96,6 +103,7 @@
 	<object class="MixerBusEffectChain" id="{2d129eb6-90f8-4d36-b482-0aee03fc21c8}">
 		<relationship name="effects">
 			<destination>{c43676fc-5a22-4fc9-b7d9-6e1e6ffc1464}</destination>
+			<destination>{3a421724-b5e4-4a13-8ca0-cae33617f5fb}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{02b766a1-3849-48f5-8baa-f14970586701}" />
@@ -113,8 +121,33 @@
 			<destination>{83902230-9094-4082-9a44-4387f2b598eb}</destination>
 		</relationship>
 	</object>
+	<object class="SingleSound" id="{bc71f7bd-ec02-4057-94ce-f4967ced9555}">
+		<property name="volume">
+			<value>-7.5</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{337acf0f-f210-4b49-903d-401b5cae949f}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{a2d0f170-a378-443b-8ec7-a01a1b7fdcdc}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{4a4439c1-fc40-4480-8764-949a2f1622dd}" />
 	<object class="MixerBusFader" id="{c43676fc-5a22-4fc9-b7d9-6e1e6ffc1464}" />
+	<object class="SFXReverbEffect" id="{3a421724-b5e4-4a13-8ca0-cae33617f5fb}">
+		<property name="decayTime">
+			<value>2200</value>
+		</property>
+		<property name="density">
+			<value>82</value>
+		</property>
+		<property name="wetLevel">
+			<value>-28.5</value>
+		</property>
+		<property name="dryLevel">
+			<value>-14</value>
+		</property>
+	</object>
 	<object class="SingleSound" id="{95fccf05-e143-4a60-875c-77c72d475697}">
 		<relationship name="audioFile">
 			<destination>{2c0ced6a-e8b4-4c6a-98eb-4550c8bdf8a8}</destination>
@@ -134,5 +167,13 @@
 		<relationship name="audioFile">
 			<destination>{fa155176-fd4f-4468-9225-df2fae66d52a}</destination>
 		</relationship>
+	</object>
+	<object class="RandomizerModulator" id="{337acf0f-f210-4b49-903d-401b5cae949f}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>7</value>
+		</property>
 	</object>
 </objects>
