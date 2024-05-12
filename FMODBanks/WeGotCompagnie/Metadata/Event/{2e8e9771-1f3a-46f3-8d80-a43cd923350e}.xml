@@ -56,7 +56,7 @@
 			<destination>{94954579-c978-4725-bbfb-a3a9fef6dfb2}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{52ff8694-876a-425a-9565-4215fb4051d9}</destination>
+			<destination>{aa76334f-d6c8-49e9-97da-ef0be25a4888}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{5a968991-9903-4e0c-b5c7-3cb32548d789}" />
@@ -103,7 +103,6 @@
 		<property name="startOffset">
 			<value>7</value>
 		</property>
-		<property name="name" />
 		<property name="volume">
 			<value>-6.5</value>
 		</property>
