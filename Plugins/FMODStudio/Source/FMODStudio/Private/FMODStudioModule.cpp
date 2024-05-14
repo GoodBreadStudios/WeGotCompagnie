@@ -1582,25 +1582,32 @@ void FFMODStudioModule::InitializeAudioSession()
         {
             case AVAudioSessionInterruptionTypeBegan:
             {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+#if !PLATFORM_TVOS
+                if (@available(iOS 16.0, *))
+                {
+                    // Interruption notifications with reason 'wasSuspended' not present from iOS 16 onwards.
+                }
                 // Starting in iOS 10, if the system suspended the app process and deactivated the audio session
                 // then we get a delayed interruption notification when the app is re-activated. Just ignore that here.
-                if (@available(iOS 14.5, *))
+                else if (@available(iOS 14.5, *))
                 {
                     if ([[notification.userInfo valueForKey:AVAudioSessionInterruptionReasonKey] intValue] == AVAudioSessionInterruptionReasonAppWasSuspended)
                     {
                         return;
                     }
                 }
-                else if (@available(iOS 10.3, *))
+                else
+#endif
+                if (@available(iOS 10.3, *))
                 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
                     if ([[notification.userInfo valueForKey:AVAudioSessionInterruptionWasSuspendedKey] boolValue])
                     {
                         return;
                     }
-#pragma clang diagnostic pop
                 }
+#pragma clang diagnostic pop
 
                 SetSystemPaused(true);
                 break;
