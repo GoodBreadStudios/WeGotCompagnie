@@ -676,7 +676,28 @@ AudioMixerModuleName=
 <p>The audio device can be disabled for every platform that you want to ship with.</p>
 <h2 id="source-control"><a href="#source-control">2.16 Source Control</a></h2>
 <p>Not all of the plugin files are required to be checked in to source control, below the necessary files are marked:</p>
-<p><img alt="Source Control Files to Add" src="images/source-control.png" /></p>
+<table>
+<thead>
+<tr>
+<th>OS</th>
+<th>Files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td><img alt="Source Control Files to Add Win" src="images/source-control-win.png" /></td>
+</tr>
+<tr>
+<td>macOS</td>
+<td><img alt="Source Control Files to Add macOS" src="images/source-control-mac.png" /></td>
+</tr>
+<tr>
+<td>Linux</td>
+<td><img alt="Source Control Files to Add Linux" src="images/source-control-linux.png" /></td>
+</tr>
+</tbody>
+</table>
 <div class="admonition warning">
 <p>FMOD Banks cannot be added using the In-Editor source control, as the editor only interacts with UAssets, they need to be added to source control from outside of the UE Editor.</p>
 </div>
@@ -711,7 +732,7 @@ AudioMixerModuleName=
 </ul>
 <p>This can be especially useful for build machines that don't normally run the Editor at all, which is what normally triggers the assets to be built, and does not require the generated assets to be checked in to source control.</p></div>
 
-<p class="manual-footer">Unreal Integration 2.02.21 (2024-03-10). &copy; 2024 Firelight Technologies Pty Ltd.</p>
+<p class="manual-footer">Unreal Integration 2.02.22 (2024-05-05). &copy; 2024 Firelight Technologies Pty Ltd.</p>
 </body>
 </html>
 

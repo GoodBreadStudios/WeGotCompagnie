@@ -3,6 +3,7 @@
 	<object class="Mixer" id="{d19a5221-bb17-4f14-b9d8-a2694f7edc06}">
 		<relationship name="vca">
 			<destination>{9d512559-c904-40c3-920d-415861a834c9}</destination>
+			<destination>{7ef58440-c17a-4df5-8b08-474bac22134f}</destination>
 		</relationship>
 	</object>
 </objects>
