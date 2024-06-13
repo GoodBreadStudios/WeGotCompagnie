@@ -1,90 +1,938 @@
 [
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/ComboTree.cpp",
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudioNiagara\\Source\\FMODStudioNiagara\\FMODStudioNiagara.Build.cs",
 		"arguments": [
-			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
-			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioNiagara.48.rsp"
 		],
-		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/ComboTree.h",
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudioNiagara\\Source\\FMODStudioNiagara\\Private\\FMODNiagaraEventPlayer.cpp",
 		"arguments": [
-			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
-			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioNiagara.48.rsp"
 		],
-		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/HelperMacros.cpp",
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudioNiagara\\Source\\FMODStudioNiagara\\Private\\FMODStudioNiagara.cpp",
 		"arguments": [
-			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
-			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioNiagara.48.rsp"
 		],
-		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/HelperMacros.h",
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudioNiagara\\Source\\FMODStudioNiagara\\Public\\FMODNiagaraEventPlayer.h",
 		"arguments": [
-			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
-			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioNiagara.48.rsp"
 		],
-		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnie.Build.cs",
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudioNiagara\\Source\\FMODStudioNiagara\\Public\\FMODStudioNiagara.h",
 		"arguments": [
-			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
-			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioNiagara.48.rsp"
 		],
-		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnie.cpp",
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Classes\\FMODAmbientSoundActorFactory.h",
 		"arguments": [
-			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
-			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
 		],
-		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnie.h",
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Classes\\FMODAssetBuilder.h",
 		"arguments": [
-			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
-			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
 		],
-		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieCharacter.cpp",
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Classes\\FMODGenerateAssetsCommandlet.h",
 		"arguments": [
-			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
-			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
 		],
-		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieCharacter.h",
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\FMODStudioEditor.Build.cs",
 		"arguments": [
-			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
-			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
 		],
-		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieGameMode.cpp",
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\AssetTypeActions_FMODEvent.cpp",
 		"arguments": [
-			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
-			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
 		],
-		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
 	},
 	{
-		"file": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Source/WeGotCompagnie/WeGotCompagnieGameMode.h",
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\AssetTypeActions_FMODEvent.h",
 		"arguments": [
-			"/Users/zxgnj/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
-			"@/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default/WeGotCompagnie.1.rsp"
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
 		],
-		"directory": "/Users/Shared/Epic Games/UE_5.3/Engine/Source"
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODAmbientSoundActorFactory.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODAssetBroker.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODAssetBuilder.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODAudioComponentDetails.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODAudioComponentDetails.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODAudioComponentVisualizer.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODAudioComponentVisualizer.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODBankUpdateNotifier.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODBankUpdateNotifier.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODEventEditor.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODEventEditor.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODGenerateAssetsCommandlet.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODSettingsCustomization.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODSettingsCustomization.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODStudioEditorModule.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODStudioEditorPrivatePCH.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODStudioStyle.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\FMODStudioStyle.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\SFMODEventEditorPanel.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\SFMODEventEditorPanel.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\Sequencer\\FMODChannelEditors.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\Sequencer\\FMODChannelEditors.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\Sequencer\\FMODEventControlTrackEditor.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\Sequencer\\FMODEventControlTrackEditor.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\Sequencer\\FMODEventParameterTrackEditor.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\Sequencer\\FMODEventParameterTrackEditor.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\Sequencer\\FMODParameterSection.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Private\\Sequencer\\FMODParameterSection.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudioEditor\\Public\\FMODStudioEditorModule.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudioEditor.47.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Classes\\FMODAmbientSound.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Classes\\FMODAnimNotifyPlay.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Classes\\FMODAsset.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Classes\\FMODAudioComponent.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Classes\\FMODBank.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Classes\\FMODBlueprintStatics.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Classes\\FMODBus.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Classes\\FMODEvent.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Classes\\FMODPort.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Classes\\FMODSettings.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Classes\\FMODSnapshot.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Classes\\FMODSnapshotReverb.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Classes\\FMODVCA.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\FMODStudio.Build.cs",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\FMODStudioL_APL.xml",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\FMODStudio_APL.xml",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODAmbientSound.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODAnimNotifyPlay.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODAsset.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODAssetLookup.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODAssetLookup.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODAssetTable.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODAssetTable.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODAudioComponent.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODBank.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODBankLookup.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODBankLookup.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODBlueprintStatics.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODBus.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODEvent.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODFileCallbacks.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODFileCallbacks.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODListener.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODListener.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODPlatform.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODPort.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODSettings.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODSnapshot.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODSnapshotReverb.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODStudioModule.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODStudioPrivatePCH.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\FMODVCA.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\Sequencer\\FMODEventControlSection.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\Sequencer\\FMODEventControlSection.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\Sequencer\\FMODEventControlSectionTemplate.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\Sequencer\\FMODEventControlSectionTemplate.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\Sequencer\\FMODEventControlTrack.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\Sequencer\\FMODEventControlTrack.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\Sequencer\\FMODEventParameterSectionTemplate.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\Sequencer\\FMODEventParameterSectionTemplate.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\Sequencer\\FMODEventParameterTrack.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Private\\Sequencer\\FMODEventParameterTrack.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Public\\FMODStudioModule.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Public\\FMODUtils.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Public\\FMOD\\fmod.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Public\\FMOD\\fmod.hpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Public\\FMOD\\fmod_android.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Public\\FMOD\\fmod_codec.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Public\\FMOD\\fmod_common.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Public\\FMOD\\fmod_dsp.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Public\\FMOD\\fmod_dsp_effects.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Public\\FMOD\\fmod_errors.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Public\\FMOD\\fmod_output.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Public\\FMOD\\fmod_studio.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Public\\FMOD\\fmod_studio.hpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Plugins\\FMODStudio\\Source\\FMODStudio\\Public\\FMOD\\fmod_studio_common.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\FMODStudio.46.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Source\\WeGotCompagnie\\ComboTree.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\WeGotCompagnie.1.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Source\\WeGotCompagnie\\ComboTree.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\WeGotCompagnie.1.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Source\\WeGotCompagnie\\HelperMacros.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\WeGotCompagnie.1.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Source\\WeGotCompagnie\\HelperMacros.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\WeGotCompagnie.1.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Source\\WeGotCompagnie\\WeGotCompagnie.Build.cs",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\WeGotCompagnie.1.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Source\\WeGotCompagnie\\WeGotCompagnie.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\WeGotCompagnie.1.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Source\\WeGotCompagnie\\WeGotCompagnie.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\WeGotCompagnie.1.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Source\\WeGotCompagnie\\WeGotCompagnieCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\WeGotCompagnie.1.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Source\\WeGotCompagnie\\WeGotCompagnieCharacter.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\WeGotCompagnie.1.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Source\\WeGotCompagnie\\WeGotCompagnieGameMode.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\WeGotCompagnie.1.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\Source\\WeGotCompagnie\\WeGotCompagnieGameMode.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default\\WeGotCompagnie.1.rsp"
+		],
+		"directory": "D:\\Epic Games II\\Epic Games\\UE_5.3\\Engine\\Source"
 	}
 ]
