@@ -9,10 +9,10 @@
 #include "Framework/MultiBox/MultiBoxBuilder.h"
 #include "Curves/IntegralCurve.h"
 #include "SequencerSectionPainter.h"
+#include "TimeToPixel.h"
 #include "EditorStyleSet.h"
 #include "Editor/UnrealEdEngine.h"
 #include "ISectionLayoutBuilder.h"
-#include "CommonMovieSceneTools.h"
 #include "Channels/MovieSceneChannelProxy.h"
 #include "Channels/MovieSceneChannelEditorData.h"
 

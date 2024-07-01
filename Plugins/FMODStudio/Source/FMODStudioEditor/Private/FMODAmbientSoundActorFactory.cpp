@@ -51,17 +51,3 @@ UObject *UFMODAmbientSoundActorFactory::GetAssetFromActorInstance(AActor *Instan
     check(SoundActor->AudioComponent);
     return SoundActor->AudioComponent->Event;
 }
-
-void UFMODAmbientSoundActorFactory::PostCreateBlueprint(UObject *Asset, AActor *CDO)
-{
-    if (Asset != NULL && CDO != NULL)
-    {
-        UFMODEvent *Event = Cast<UFMODEvent>(Asset);
-
-        if (Event != NULL)
-        {
-            AFMODAmbientSound *NewSound = CastChecked<AFMODAmbientSound>(CDO);
-            NewSound->AudioComponent->Event = Event;
-        }
-    }
-}

@@ -1,20 +1,34 @@
 {
     "configurations": [
         {
-            "name": "WeGotCompagnieEditor Editor Win64 Development (WeGotCompagnie)",
-            "compilerPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+            "name": "WeGotCompagnieEditor Editor Mac Development (WeGotCompagnie)",
+            "compilerPath": "\"/Users/zxgnj/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/c_cpp_properties.json\"",
+            "compilerArgs": [
+                "-isysroot",
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
+            ],
+            "macFrameworkPath": [
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
             "cStandard": "c17",
-            "cppStandard": "c++20",
-            "intelliSenseMode": "msvc-x64",
-            "compileCommands": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_WeGotCompagnie.json"
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "compileCommands": "/Users/zxgnj/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_WeGotCompagnie.json"
         },
         {
-            "name": "Win32",
-            "compilerPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+            "name": "Mac",
+            "compilerPath": "\"/Users/zxgnj/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/c_cpp_properties.json\"",
+            "compilerArgs": [
+                "-isysroot",
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
+            ],
+            "macFrameworkPath": [
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
             "cStandard": "c17",
-            "cppStandard": "c++20",
-            "intelliSenseMode": "msvc-x64",
-            "compileCommands": "C:\\Users\\Ariana NEW\\Documents\\GitHub\\WeGotCompagnie\\.vscode\\compileCommands_Default.json"
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "compileCommands": "/Users/zxgnj/ICS 169 CAPSTONE/WeGotCompagnie/.vscode/compileCommands_Default.json"
         }
     ],
     "version": 4

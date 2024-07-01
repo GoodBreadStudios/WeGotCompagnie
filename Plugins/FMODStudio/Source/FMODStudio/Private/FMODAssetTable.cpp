@@ -181,7 +181,7 @@ void FFMODAssetTable::GetAllBankPaths(TArray<FString> &Paths, bool IncludeMaster
     {
         const UFMODSettings &Settings = *GetDefault<UFMODSettings>();
 
-        BankLookup->DataTable->ForeachRow<FFMODLocalizedBankTable>(nullptr, [this, &Paths, IncludeMasterBank, &Settings](const FName &, const FFMODLocalizedBankTable& OuterRow) {
+        BankLookup->DataTable->ForeachRow<FFMODLocalizedBankTable>(nullptr, [this, &Paths, IncludeMasterBank, &Settings](const FName&, const FFMODLocalizedBankTable& OuterRow) {
             FString BankPath = GetLocalizedBankPath(OuterRow.Banks);
             bool Skip = false;
 
