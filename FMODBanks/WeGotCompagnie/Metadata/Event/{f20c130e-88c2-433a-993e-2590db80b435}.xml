@@ -5,7 +5,7 @@
 			<value>Boss Right Foot</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{2fea947e-9968-44aa-b190-f8fc8231b3a2}</destination>
@@ -96,6 +96,7 @@
 	<object class="MixerBusEffectChain" id="{26811a28-f6c6-4102-ad96-2ca12e6576ca}">
 		<relationship name="effects">
 			<destination>{09f43268-db73-4239-b92a-331ab43110e8}</destination>
+			<destination>{8a25593f-9188-4441-bcf8-fa150b2c8a9b}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{98b0e06e-0b35-47a1-885b-3ba0bb357e03}" />
@@ -112,6 +113,20 @@
 	</object>
 	<object class="MixerBusFader" id="{68c9fc87-167f-4c82-a53a-036c91eead56}" />
 	<object class="MixerBusFader" id="{09f43268-db73-4239-b92a-331ab43110e8}" />
+	<object class="SpatialiserEffect" id="{8a25593f-9188-4441-bcf8-fa150b2c8a9b}">
+		<property name="minimumDistance">
+			<value>5</value>
+		</property>
+		<property name="maximumDistance">
+			<value>75</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+		<property name="panBlend">
+			<value>0.604999959</value>
+		</property>
+	</object>
 	<object class="RandomizerModulator" id="{f38524eb-b1ec-45e1-9d57-9cf5eb18c6e5}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
