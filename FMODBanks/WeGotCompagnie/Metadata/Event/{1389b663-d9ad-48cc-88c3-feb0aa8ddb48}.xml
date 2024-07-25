@@ -5,7 +5,7 @@
 			<value>Boss Charge</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{2fea947e-9968-44aa-b190-f8fc8231b3a2}</destination>
@@ -108,6 +108,7 @@
 	<object class="MixerBusEffectChain" id="{969a22ed-cbf5-4cc9-86ce-7aa260018e71}">
 		<relationship name="effects">
 			<destination>{e9fab10b-bc29-42c5-8995-9a33da38201c}</destination>
+			<destination>{d8af456e-9791-4623-b941-165948a08c7a}</destination>
 			<destination>{db84c082-1220-4029-a611-bf6abcc8db11}</destination>
 		</relationship>
 	</object>
@@ -130,6 +131,23 @@
 	</object>
 	<object class="MixerBusFader" id="{3e88c162-1a8b-4a70-95b1-99bfcccddcf6}" />
 	<object class="MixerBusFader" id="{e9fab10b-bc29-42c5-8995-9a33da38201c}" />
+	<object class="SpatialiserEffect" id="{d8af456e-9791-4623-b941-165948a08c7a}">
+		<property name="distanceRolloffType">
+			<value>3</value>
+		</property>
+		<property name="minimumDistance">
+			<value>8.60000038</value>
+		</property>
+		<property name="maximumDistance">
+			<value>100</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+		<property name="panBlend">
+			<value>0.699999988</value>
+		</property>
+	</object>
 	<object class="SFXReverbEffect" id="{db84c082-1220-4029-a611-bf6abcc8db11}">
 		<property name="decayTime">
 			<value>2000</value>
