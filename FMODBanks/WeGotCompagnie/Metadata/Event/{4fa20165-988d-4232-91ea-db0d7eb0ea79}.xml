@@ -115,16 +115,16 @@
 	<object class="MixerBusFader" id="{0597043e-438b-4351-8235-ac47f0aff5b2}" />
 	<object class="SpatialiserEffect" id="{d9ed97a9-8817-4061-b700-e00d850d0333}">
 		<property name="minimumDistance">
-			<value>5</value>
+			<value>10</value>
 		</property>
 		<property name="maximumDistance">
-			<value>75</value>
+			<value>100</value>
 		</property>
 		<property name="overrideRange">
 			<value>true</value>
 		</property>
 		<property name="panBlend">
-			<value>0.604999959</value>
+			<value>0.699999988</value>
 		</property>
 	</object>
 	<object class="RandomizerModulator" id="{c5f31a71-a604-48e9-9d37-ba6b100e66f4}">
