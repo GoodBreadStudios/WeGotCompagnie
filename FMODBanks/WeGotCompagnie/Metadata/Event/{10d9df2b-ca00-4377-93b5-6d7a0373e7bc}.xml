@@ -5,7 +5,7 @@
 			<value>Boss Jump</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{2fea947e-9968-44aa-b190-f8fc8231b3a2}</destination>
@@ -99,6 +99,7 @@
 	<object class="MixerBusEffectChain" id="{79380dca-ce76-42b0-b796-56e5c9be30e0}">
 		<relationship name="effects">
 			<destination>{ab2fd952-a9c8-44a2-903c-fc194b20d42e}</destination>
+			<destination>{17f8bd26-6137-4ca5-8df7-52f7de78198f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{d0595b46-c479-49f0-a86c-43d17e1e2dfd}" />
@@ -113,6 +114,23 @@
 	</object>
 	<object class="MixerBusFader" id="{ee27c1ab-8a12-4542-a5ae-31f2fce1e6e0}" />
 	<object class="MixerBusFader" id="{ab2fd952-a9c8-44a2-903c-fc194b20d42e}" />
+	<object class="SpatialiserEffect" id="{17f8bd26-6137-4ca5-8df7-52f7de78198f}">
+		<property name="distanceRolloffType">
+			<value>3</value>
+		</property>
+		<property name="minimumDistance">
+			<value>8.60000038</value>
+		</property>
+		<property name="maximumDistance">
+			<value>100</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+		<property name="panBlend">
+			<value>0.699999988</value>
+		</property>
+	</object>
 	<object class="SingleSound" id="{c2fe880f-7038-4af3-b3c2-337b09992756}">
 		<relationship name="audioFile">
 			<destination>{24a6c9cf-c0d7-4d43-a5a5-ad56d7ced5a4}</destination>
