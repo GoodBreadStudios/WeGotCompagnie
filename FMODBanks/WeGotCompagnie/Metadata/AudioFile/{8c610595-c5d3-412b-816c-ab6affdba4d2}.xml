@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{8c610595-c5d3-412b-816c-ab6affdba4d2}">
+		<property name="assetPath">
+			<value>UIpluck6.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.454875283446712</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9cc28386-acee-4077-b039-ef67372fede0}</destination>
+		</relationship>
+	</object>
+</objects>
