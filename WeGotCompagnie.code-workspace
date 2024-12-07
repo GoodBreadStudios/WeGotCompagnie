@@ -33,7 +33,7 @@
 					"WeGotCompagnie",
 					"Mac",
 					"Debug",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -50,7 +50,7 @@
 					"WeGotCompagnie",
 					"Mac",
 					"Debug",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -70,7 +70,7 @@
 					"WeGotCompagnie",
 					"Mac",
 					"Debug",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -88,7 +88,7 @@
 					"WeGotCompagnie",
 					"Mac",
 					"DebugGame",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -105,7 +105,7 @@
 					"WeGotCompagnie",
 					"Mac",
 					"DebugGame",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -125,7 +125,7 @@
 					"WeGotCompagnie",
 					"Mac",
 					"DebugGame",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -143,7 +143,7 @@
 					"WeGotCompagnie",
 					"Mac",
 					"Development",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -160,7 +160,7 @@
 					"WeGotCompagnie",
 					"Mac",
 					"Development",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -180,7 +180,7 @@
 					"WeGotCompagnie",
 					"Mac",
 					"Development",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -198,7 +198,7 @@
 					"WeGotCompagnie",
 					"Mac",
 					"Test",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -215,7 +215,7 @@
 					"WeGotCompagnie",
 					"Mac",
 					"Test",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -235,7 +235,7 @@
 					"WeGotCompagnie",
 					"Mac",
 					"Test",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -253,7 +253,7 @@
 					"WeGotCompagnie",
 					"Mac",
 					"Shipping",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -270,7 +270,7 @@
 					"WeGotCompagnie",
 					"Mac",
 					"Shipping",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -290,7 +290,7 @@
 					"WeGotCompagnie",
 					"Mac",
 					"Shipping",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -308,7 +308,7 @@
 					"WeGotCompagnie",
 					"IOS",
 					"Debug",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -325,7 +325,7 @@
 					"WeGotCompagnie",
 					"IOS",
 					"Debug",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -345,7 +345,7 @@
 					"WeGotCompagnie",
 					"IOS",
 					"Debug",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -363,7 +363,7 @@
 					"WeGotCompagnie",
 					"IOS",
 					"DebugGame",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -380,7 +380,7 @@
 					"WeGotCompagnie",
 					"IOS",
 					"DebugGame",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -400,7 +400,7 @@
 					"WeGotCompagnie",
 					"IOS",
 					"DebugGame",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -418,7 +418,7 @@
 					"WeGotCompagnie",
 					"IOS",
 					"Development",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -435,7 +435,7 @@
 					"WeGotCompagnie",
 					"IOS",
 					"Development",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -455,7 +455,7 @@
 					"WeGotCompagnie",
 					"IOS",
 					"Development",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -473,7 +473,7 @@
 					"WeGotCompagnie",
 					"IOS",
 					"Test",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -490,7 +490,7 @@
 					"WeGotCompagnie",
 					"IOS",
 					"Test",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -510,7 +510,7 @@
 					"WeGotCompagnie",
 					"IOS",
 					"Test",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -528,7 +528,7 @@
 					"WeGotCompagnie",
 					"IOS",
 					"Shipping",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -545,7 +545,7 @@
 					"WeGotCompagnie",
 					"IOS",
 					"Shipping",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -565,7 +565,7 @@
 					"WeGotCompagnie",
 					"IOS",
 					"Shipping",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -583,7 +583,7 @@
 					"WeGotCompagnieEditor",
 					"Mac",
 					"Debug",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -600,7 +600,7 @@
 					"WeGotCompagnieEditor",
 					"Mac",
 					"Debug",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -620,7 +620,7 @@
 					"WeGotCompagnieEditor",
 					"Mac",
 					"Debug",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -638,7 +638,7 @@
 					"WeGotCompagnieEditor",
 					"Mac",
 					"DebugGame",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -655,7 +655,7 @@
 					"WeGotCompagnieEditor",
 					"Mac",
 					"DebugGame",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -675,7 +675,7 @@
 					"WeGotCompagnieEditor",
 					"Mac",
 					"DebugGame",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -693,7 +693,7 @@
 					"WeGotCompagnieEditor",
 					"Mac",
 					"Development",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -710,7 +710,7 @@
 					"WeGotCompagnieEditor",
 					"Mac",
 					"Development",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -730,7 +730,7 @@
 					"WeGotCompagnieEditor",
 					"Mac",
 					"Development",
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -748,7 +748,7 @@
 			{
 				"name": "Launch WeGotCompagnie (Debug)",
 				"request": "launch",
-				"program": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Binaries/Mac/UnrealGame-Mac-Debug.app/Contents/MacOS/UnrealGame-Mac-Debug",
+				"program": "/Users/zxgnj/WeGotCompagnie/Binaries/Mac/UnrealGame-Mac-Debug.app/Contents/MacOS/UnrealGame-Mac-Debug",
 				"preLaunchTask": "WeGotCompagnie Mac Debug Build",
 				"args": [
 				],
@@ -758,7 +758,7 @@
 			{
 				"name": "Launch WeGotCompagnie (DebugGame)",
 				"request": "launch",
-				"program": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Binaries/Mac/UnrealGame-Mac-DebugGame.app/Contents/MacOS/UnrealGame-Mac-DebugGame",
+				"program": "/Users/zxgnj/WeGotCompagnie/Binaries/Mac/UnrealGame-Mac-DebugGame.app/Contents/MacOS/UnrealGame-Mac-DebugGame",
 				"preLaunchTask": "WeGotCompagnie Mac DebugGame Build",
 				"args": [
 				],
@@ -768,7 +768,7 @@
 			{
 				"name": "Launch WeGotCompagnie (Development)",
 				"request": "launch",
-				"program": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Binaries/Mac/UnrealGame.app/Contents/MacOS/UnrealGame",
+				"program": "/Users/zxgnj/WeGotCompagnie/Binaries/Mac/UnrealGame.app/Contents/MacOS/UnrealGame",
 				"preLaunchTask": "WeGotCompagnie Mac Development Build",
 				"args": [
 				],
@@ -778,7 +778,7 @@
 			{
 				"name": "Launch WeGotCompagnie (Test)",
 				"request": "launch",
-				"program": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Binaries/Mac/UnrealGame-Mac-Test.app/Contents/MacOS/UnrealGame-Mac-Test",
+				"program": "/Users/zxgnj/WeGotCompagnie/Binaries/Mac/UnrealGame-Mac-Test.app/Contents/MacOS/UnrealGame-Mac-Test",
 				"preLaunchTask": "WeGotCompagnie Mac Test Build",
 				"args": [
 				],
@@ -788,7 +788,7 @@
 			{
 				"name": "Launch WeGotCompagnie (Shipping)",
 				"request": "launch",
-				"program": "/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/Binaries/Mac/UnrealGame-Mac-Shipping.app/Contents/MacOS/UnrealGame-Mac-Shipping",
+				"program": "/Users/zxgnj/WeGotCompagnie/Binaries/Mac/UnrealGame-Mac-Shipping.app/Contents/MacOS/UnrealGame-Mac-Shipping",
 				"preLaunchTask": "WeGotCompagnie Mac Shipping Build",
 				"args": [
 				],
@@ -801,7 +801,7 @@
 				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Binaries/Mac/UnrealEditor-Mac-Debug.app/Contents/MacOS/UnrealEditor-Mac-Debug",
 				"preLaunchTask": "WeGotCompagnieEditor Mac Debug Build",
 				"args": [
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject"
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject"
 				],
 				"cwd": "/Users/Shared/Epic Games/UE_5.3",
 				"type": "lldb"
@@ -812,7 +812,7 @@
 				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Binaries/Mac/UnrealEditor-Mac-DebugGame.app/Contents/MacOS/UnrealEditor-Mac-DebugGame",
 				"preLaunchTask": "WeGotCompagnieEditor Mac DebugGame Build",
 				"args": [
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject"
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject"
 				],
 				"cwd": "/Users/Shared/Epic Games/UE_5.3",
 				"type": "lldb"
@@ -823,7 +823,7 @@
 				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor",
 				"preLaunchTask": "WeGotCompagnieEditor Mac Development Build",
 				"args": [
-					"/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject"
+					"/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject"
 				],
 				"cwd": "/Users/Shared/Epic Games/UE_5.3",
 				"type": "lldb"
@@ -837,7 +837,7 @@
 				"args": [
 					"-projectfiles",
 					"-vscode",
-					"-project=/Users/zxgnj/Desktop/ICS 169 CAPSTONE/WeGotCompagnie/WeGotCompagnie.uproject",
+					"-project=/Users/zxgnj/WeGotCompagnie/WeGotCompagnie.uproject",
 					"-game",
 					"-engine",
 					"-dotnet"
