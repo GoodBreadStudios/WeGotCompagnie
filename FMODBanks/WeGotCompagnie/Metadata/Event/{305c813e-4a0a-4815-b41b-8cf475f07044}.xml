@@ -86,8 +86,12 @@
 		</relationship>
 	</object>
 	<object class="MultiSound" id="{23d50e58-7e25-4a0f-8d31-2d70ce3adf59}">
+		<property name="playbackMode">
+			<value>1</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{35c04a71-1945-4adb-b368-c300aeac5363}</destination>
+			<destination>{2d839ad3-936a-476d-9d10-17c90ebaf76b}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{7eaeda35-34b8-46c4-a6d1-8d56b8c41422}">
@@ -120,6 +124,16 @@
 			<destination>{08c2848b-6f1f-493e-9fb5-f87f22a3399c}</destination>
 			<destination>{1cd55fe9-b7d1-4115-9b0d-af5d596c312b}</destination>
 			<destination>{e90e8b40-aed9-4909-aa4c-3ba738ab4830}</destination>
+		</relationship>
+	</object>
+	<object class="MultiSound" id="{2d839ad3-936a-476d-9d10-17c90ebaf76b}">
+		<property name="playlistMode">
+			<value>1</value>
+		</property>
+		<relationship name="sounds">
+			<destination>{3995f902-6b19-410d-82f3-5c926d2cc8f7}</destination>
+			<destination>{926e7925-4698-43ad-9434-f497fbbefb85}</destination>
+			<destination>{ac5dc203-c286-420c-badb-e7646ffb6f72}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{44615eae-bb74-4def-9656-83a83237fd28}" />
@@ -189,6 +203,24 @@
 	<object class="SingleSound" id="{e90e8b40-aed9-4909-aa4c-3ba738ab4830}">
 		<relationship name="audioFile">
 			<destination>{67eecc06-20f6-4558-988a-0f045c380d87}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{3995f902-6b19-410d-82f3-5c926d2cc8f7}">
+		<property name="volume">
+			<value>4</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{9bbe2511-ae00-44d7-9e33-7585a7cef1e6}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{926e7925-4698-43ad-9434-f497fbbefb85}">
+		<relationship name="audioFile">
+			<destination>{52cc058b-0769-4189-821a-682accbc67ac}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{ac5dc203-c286-420c-badb-e7646ffb6f72}">
+		<relationship name="audioFile">
+			<destination>{52cc058b-0769-4189-821a-682accbc67ac}</destination>
 		</relationship>
 	</object>
 </objects>
