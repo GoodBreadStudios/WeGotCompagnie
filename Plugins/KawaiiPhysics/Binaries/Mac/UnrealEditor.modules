@@ -1,0 +1,8 @@
+{
+	"BuildId": "067e3c2f-c168-4fd4-85a9-dcdfce16811f",
+	"Modules": 
+	{
+		"KawaiiPhysics": "UnrealEditor-KawaiiPhysics.dylib",
+		"KawaiiPhysicsEd": "UnrealEditor-KawaiiPhysicsEd.dylib"
+	}
+}
