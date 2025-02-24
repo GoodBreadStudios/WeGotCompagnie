@@ -25,6 +25,7 @@
 		<relationship name="markerTracks">
 			<destination>{419a2b84-4370-4b5f-8101-de8e378ec4d6}</destination>
 			<destination>{28dd43d4-0a36-4630-83e8-da9974bce805}</destination>
+			<destination>{7786c7be-56b7-4f8d-a96d-837afe2c283a}</destination>
 		</relationship>
 		<relationship name="groupTracks">
 			<destination>{b32aba4d-1ccc-4caa-b1de-74c8e20be6e2}</destination>
@@ -60,6 +61,7 @@
 	<object class="EventAutomatableProperties" id="{115b62be-9009-430c-b33a-c8e2f8f81559}" />
 	<object class="MarkerTrack" id="{419a2b84-4370-4b5f-8101-de8e378ec4d6}" />
 	<object class="MarkerTrack" id="{28dd43d4-0a36-4630-83e8-da9974bce805}" />
+	<object class="MarkerTrack" id="{7786c7be-56b7-4f8d-a96d-837afe2c283a}" />
 	<object class="GroupTrack" id="{b32aba4d-1ccc-4caa-b1de-74c8e20be6e2}">
 		<relationship name="modules">
 			<destination>{f56b3343-8c6f-426e-bc09-04909dbb2529}</destination>
@@ -139,7 +141,7 @@
 	</object>
 	<object class="NamedMarker" id="{e3196e06-0aa0-4fca-a195-c8dddfcb3baf}">
 		<property name="position">
-			<value>1.5750000000000002</value>
+			<value>0.875</value>
 		</property>
 		<property name="name">
 			<value>Explode</value>
@@ -148,7 +150,7 @@
 			<destination>{5e281217-e19b-4468-8d08-da43627b0b59}</destination>
 		</relationship>
 		<relationship name="markerTrack">
-			<destination>{28dd43d4-0a36-4630-83e8-da9974bce805}</destination>
+			<destination>{7786c7be-56b7-4f8d-a96d-837afe2c283a}</destination>
 		</relationship>
 	</object>
 	<object class="NamedMarker" id="{028fba4b-028b-4c88-acf6-08a5dbb4ffd0}">
