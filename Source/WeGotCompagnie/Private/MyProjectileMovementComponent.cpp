@@ -6,6 +6,7 @@
 
 void UMyProjectileMovementComponent::StopSimulating(const FHitResult& HitResult)
 {
+	bRotationFollowsVelocity = false;
 	Velocity = FVector::ZeroVector;
 	ClearPendingForce(true);
 	UpdateComponentVelocity();
